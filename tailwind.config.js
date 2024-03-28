@@ -3,16 +3,16 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      screens: {
+        tablette: { max: '1023px' },
+        mobile: { max: '639px' },
+      },
       colors: {
         primary: '#FCFDF9',
         secondary: '#ECFAC5',
-        borderColor: '#C5DE6B',
-        textColor: '#37410C',
-
-        darkPrimary: '#10120A',
-        darkSecondary: '#232813',
-        darkborderColor: '#465215',
-        darkTextColor: '#DDEFA8',
+        tertinary: '#A5C200',
+        borderColor: '#232813',
+        textColor: '#10120A',
       },
       fontFamily: {
         titleFont: ['Playfair Display', 'sans-serif'],
