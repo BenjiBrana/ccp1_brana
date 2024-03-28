@@ -29,7 +29,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="flex tablette:flex-col py-5 border-t bg-secondary text-textColor">
+    <footer className="flex tablette:flex-col mt-8 py-5 border-t bg-secondary text-textColor">
       <div className="reseauxSociaux flex w-1/4 justify-evenly items-center tablette:w-full tablette:justify-center tablette:gap-8 tablette:mt-8 ">
         {liensReseauxSociaux.map((lienReseauSocial) => (
           <div key={lienReseauSocial.id}>

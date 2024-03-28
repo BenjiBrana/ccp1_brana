@@ -42,9 +42,9 @@ export default function Offres() {
         <div className="offres flex flex-row flex-wrap justify-evenly  h-full w-3/4">
           {offres.map((offre) => (
             <div className="card" key={offre.id}>
-              <div>
+              <div className="w-full">
                 <Image
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl w-full"
                   src={`/${offre.lien}`}
                   alt={offre.alt}
                   title={offre.titleImg}

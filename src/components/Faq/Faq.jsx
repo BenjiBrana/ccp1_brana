@@ -1,78 +1,69 @@
-import Image from 'next/image';
-const articles = [
+'use client';
+import React, { useState } from 'react';
+const faqs = [
   {
-    id: 'article1',
-    titleImg: 'Photo conseil pour la transformation numérique',
-    alt: 'Transformation numérique',
-    lien: './transformation_numérique.jpg',
-    class: 'article',
-    titleArticle: 'Conseil pour la transformation numérique',
+    id: 'faq1',
+    title:
+      'Pourquoi est-ce important d’avoir un conseil en transformation numérique ?',
     contenu:
-      'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
+      'Le conseil en transformation numérique est crucial car il aide les entreprises à intégrer efficacement les technologies numériques dans leurs opérations quotidiennes. Cela peut conduire à une amélioration de l’efficacité, une augmentation de la productivité et une compétitivité accrue sur le marché.',
   },
   {
-    id: 'article2',
-    titleImg: 'Photo audit d’entreprise',
-    alt: 'Audit d’entreprise',
-    lien: './audit_entreprise.jpg',
-    class: 'articleReverse',
-    titleArticle: 'Audit d’entreprise',
+    id: 'faq2',
+    title:
+      'Pourquoi est-ce important de faire un audit aux entreprises ?',
     contenu:
-      'Un audit d’entreprise est une évaluation complète de votre entreprise qui identifie les domaines d’amélioration et les opportunités de croissance. Nos auditeurs expérimentés examinent tous les aspects de votre entreprise, y compris les finances, les opérations, la gestion et la stratégie. Nous vous fournissons un rapport détaillé avec des recommandations sur la façon d’améliorer votre entreprise.',
+      'Un audit d’entreprise est important car il fournit une évaluation indépendante des processus et des contrôles financiers d’une entreprise. Cela permet de s’assurer que l’entreprise est gérée efficacement et en toute sécurité, ce qui peut renforcer la confiance des investisseurs et des parties prenantes.',
   },
   {
-    id: 'article3',
-    titleImg: 'Photo concernant la commmunication et le webmarketing',
-    alt: 'Communication et webmarketing',
-    lien: './communication_webmarketing.jpg',
-    class: 'article',
-    titleArticle: 'Stratégie de communication et de webmarketing',
+    id: 'faq3',
+    title:
+      'Pourquoi est-ce important d’avoir une stratégie de communication et de webmarketing ?',
     contenu:
-      'Une stratégie de communication efficace est essentielle pour atteindre votre public cible et promouvoir votre entreprise. Nous utilisons les dernières techniques de webmarketing, y compris le SEO, le marketing par e-mail, les médias sociaux et le marketing de contenu, pour augmenter votre visibilité en ligne et attirer plus de clients.',
+      'Avoir une stratégie de communication et de webmarketing est essentiel car elle permet à une entreprise de toucher efficacement son public cible, de promouvoir ses produits ou services et de renforcer sa présence en ligne. Cela peut conduire à une augmentation de la notoriété de la marque et à une croissance des ventes.',
   },
   {
-    id: 'article4',
-    titleImg: 'Photo concernant la campagnes publicitaires',
-    alt: 'Campagnes publicitaires',
-    lien: './campagnes_publicitaires.jpg',
-    class: 'articleReverse',
-    titleArticle: 'Offre et mise en place de campagnes publicitaires',
+    id: 'faq4',
+    title: 'Pourquoi est-ce important de créer une identité visuelle',
     contenu:
-      'Nous créons des campagnes publicitaires innovantes qui captent l’attention de votre public cible et promeuvent votre entreprise. Nous gérons tous les aspects de la campagne, de la conception à la mise en œuvre, pour vous assurer un retour sur investissement maximal.',
+      'La création d’une identité visuelle est importante car elle aide à définir comment une entreprise est perçue par le public. Une identité visuelle forte et cohérente peut aider à renforcer la reconnaissance de la marque, à établir la crédibilité et à différencier l’entreprise de ses concurrents.',
   },
   {
-    id: 'article5',
-    titleImg: 'Photo concernant la Création d’identité visuelle',
-    alt: 'Création d’identité visuelle',
-    lien: './identite_visuelle.jpg',
-    class: 'article',
-    titleArticle: 'Création d’identité visuelle',
+    id: 'faq5',
+    title: 'Pourquoi est-ce important de créer un site web ?',
     contenu:
-      'Une identité visuelle forte est essentielle pour se démarquer de la concurrence. Notre équipe de designers crée une identité visuelle unique pour votre entreprise qui reflète vos valeurs et votre vision. Que vous ayez besoin d’un nouveau logo, d’une refonte de site web ou d’une campagne de branding complète, nous avons les compétences et l’expérience nécessaires pour vous aider.',
+      'La création d’un site web est importante car elle offre à une entreprise une présence en ligne, ce qui est crucial dans le monde numérique d’aujourd’hui. Un site web peut aider à atteindre un public plus large, à promouvoir les produits ou services de l’entreprise et à établir une crédibilité.',
   },
   {
-    id: 'article6',
-    titleImg:
-      'Photo concernant le Développement web et reseaux sociaux',
-    alt: 'Développement web et reseaux sociaux',
-    lien: './dev_web_rs.jpg',
-    class: 'articleReverse',
-    titleArticle: 'Développement web et gestion des réseaux sociaux',
+    id: 'faq6',
+    title: 'Pourquoi est-ce important de gérer les réseaux sociaux ?',
     contenu:
-      'Une identité visuelle forte est essentielle pour se démarquer de la concurrence. Notre équipe de designers crée une identité visuelle unique pour votre entreprise qui reflète vos valeurs et votre vision. Que vous ayez besoin d’un nouveau logo, d’une refonte de site web ou d’une campagne de branding complète, nous avons les compétences et l’expérience nécessaires pour vous aider.',
+      'La gestion des réseaux sociaux est importante car elle permet à une entreprise d’interagir directement avec son public, de renforcer l’engagement et de surveiller les commentaires et les opinions des clients. Cela peut conduire à une meilleure satisfaction de la clientèle et à une amélioration de la réputation de la marque.',
   },
   {
-    id: 'article7',
-    titleImg: 'Photo concernant le community management',
-    alt: 'Community management',
-    lien: './community_management.jpg',
-    class: 'article',
-    titleArticle: 'Service de community management',
+    id: 'faq7',
+    title:
+      'Pourquoi est-ce important de mener une campagne publicitaire ?',
     contenu:
-      'Une communauté en ligne engagée peut être un atout précieux pour votre entreprise. Nous gérons votre communauté en ligne, en publiant du contenu intéressant, en répondant aux commentaires et en encourageant l’interaction. Nous travaillons pour renforcer votre marque et créer un lien fort avec vos clients.',
+      'Les campagnes publicitaires sont importantes car elles permettent à une entreprise de promouvoir ses produits ou services à un public cible. Une campagne publicitaire efficace peut augmenter la notoriété de la marque, stimuler les ventes et améliorer la part de marché.',
+  },
+  {
+    id: 'faq8',
+    title:
+      'Pourquoi est-ce important de faire du community management ?',
+    contenu:
+      'Le community management est important car il permet à une entreprise de gérer et d’engager une communauté en ligne autour de sa marque ou de son produit. Cela peut conduire à une plus grande fidélité à la marque, à une meilleure satisfaction de la clientèle et à une augmentation de l’engagement des utilisateurs.',
   },
 ];
 export default function Faq() {
+  const [open, setOpen] = useState(null);
+  const handleClickOpen = (index) => {
+    if (open === index) {
+      setOpen(null);
+    } else {
+      setOpen(index);
+    }
+  };
   return (
     <div>
       <section className="flex flex-col  bg-primary w-full">
@@ -82,18 +73,25 @@ export default function Faq() {
         >
           FAQ
         </h2>
-        <div className="flex flex-col items-center w-full mb-8">
-          <h3 className="faq font-titleFont font-bold">
-            Pourquoi c'est important d'avoir un site web ?
-          </h3>
-          <div className="faq">
-            La présence en ligne est essentielle car un site web
-            permet de renforcer la visibilité de votre entreprise,
-            d'atteindre un public plus large et d'établir une
-            crédibilité dans un monde de plus en plus connecté.
-          </div>
-        </div>
-        <div className="flex justify-center ">
+        {faqs.map((faq, index) => (
+          <>
+            <div
+              key={faq.id}
+              className="flex flex-col items-center w-full mb-2"
+            >
+              <h3
+                onClick={() => handleClickOpen(index)}
+                className="faq font-titleFont font-bold bg-secondary rounded-t-lg cursor-pointer"
+              >
+                {faq.title}
+              </h3>
+              {open === index && (
+                <p className="faq rounded-b-lg">{faq.contenu}</p>
+              )}
+            </div>
+          </>
+        ))}
+        <div className="flex justify-center mt-2">
           <a
             href="#"
             className="border cursor-pointer rounded-lg p-2 bg-red-500 text-textColor  text-center text-xl font-bold"

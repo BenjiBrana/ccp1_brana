@@ -69,9 +69,9 @@ export default function Realisation() {
         <div className="cards flex flex-row flex-wrap justify-evenly  h-full w-3/4">
           {cards.map((card) => (
             <div className="card cursor-pointer" key={card.id}>
-              <div className="card-image">
+              <div className="card-image w-full">
                 <Image
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl w-full"
                   src={`/${card.lien}`}
                   alt={card.alt}
                   title={card.titleImg}

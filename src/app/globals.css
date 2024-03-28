@@ -35,3 +35,15 @@
 .faq {
     @apply border w-1/2 flex justify-center p-2;
 }
+
+.arrowTop {
+    @apply z-10 flex items-center justify-center border w-12 tablette:w-6 h-12 tablette:h-6 rounded-full fixed bottom-0 right-0 m-2 hover:bg-secondary;
+}
+
+.btnGroup {
+    @apply fixed left-0 top-1/2 -translate-y-1/2 z-10 flex flex-col p-1 gap-2 overflow-hidden bg-gray-400/50 active:left-0 rounded-tr-2xl rounded-br-2xl transition-all ease-in;
+}
+
+.buttonMode {
+    @apply bg-gray-500/50 border-0 rounded-full my-2 mx-0 cursor-pointer p-1 hover:bg-red-500 hover:border-2 hover:border-black;
+}

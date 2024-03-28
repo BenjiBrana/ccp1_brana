@@ -6,14 +6,17 @@ const articles = [
   {
     id: 'image1',
     image: '/slide1.jfif',
-    title: 'Article 1',
-    contenu: 'Ceci est le premier article.',
+    title: 'CDI ou Freelance, comment choisir ?',
+    contenu:
+      'Découvrez les clés pour faire le choix crucial entre un contrat à durée indéterminée (CDI) et le statut de freelance, pour optimiser votre carrière professionnelle.',
   },
   {
     id: 'image2',
     image: '/communication_webmarketing.jpg',
-    title: 'Article 2',
-    contenu: 'Ceci est le deuxième article.',
+    title:
+      'Le SEA est-il essentiel, ou le SEO seul peut-il être adéquat ?',
+    contenu:
+      'Plongez dans le débat entre SEA et SEO pour découvrir si le référencement payant est vraiment indispensable ou si une stratégie SEO bien ficelée peut suffire à propulser votre présence en ligne.',
   },
 ];
 
@@ -55,7 +58,7 @@ export default function MySlider() {
                 src={article.image}
               />
               <div className="z-20 absolute left-1/2 border-2  border-textColor/20 -translate-x-1/2 bottom-0 translate-y-full w-full py-3 px-6 bg-secondary rounded-b-lg">
-                <p className="text-2xl mt-4 w-full text-center text-black">
+                <p className="text-2xl mt-4 py-3 font-bold w-full text-center text-black">
                   {article.contenu}
                 </p>
               </div>
