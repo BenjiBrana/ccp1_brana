@@ -8,11 +8,11 @@ module.exports = {
         'fade-out': 'fadeOut 0.5s ease forwards',
       },
       keyframes: {
-        fadeIn: {
+        'fade-in': {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        fadeOut: {
+        'fade-out': {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' },
         },

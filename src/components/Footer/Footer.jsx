@@ -36,7 +36,7 @@ export default function Footer() {
             <a className="cursor-pointer" href={lienReseauSocial.url}>
               <Image
                 className="imgCircle h-12"
-                src={`/${lienReseauSocial.lien}`}
+                src={`/logo/${lienReseauSocial.lien}`}
                 alt={lienReseauSocial.alt}
                 title={lienReseauSocial.title}
                 width={50}
@@ -80,7 +80,7 @@ export default function Footer() {
             <a className="flex gap-4 items-center " href="#">
               <Image
                 className="imgCircle"
-                src="/logo_accessibilite.webp"
+                src="/logo/logo_accessibilite.webp"
                 alt="Logo accessibilité"
                 title="Accessibility"
                 width={32}
@@ -93,7 +93,7 @@ export default function Footer() {
             <a className="flex gap-4 items-center" href="#">
               <Image
                 className="imgCircle"
-                src="/logo_faciliti.webp"
+                src="/logo/logo_faciliti.webp"
                 alt="Logo facil'iti"
                 title="Facil'iti"
                 width={32}
@@ -106,7 +106,7 @@ export default function Footer() {
         <div className="flex items-center justify-center ">
           <Image
             className="rounded-md mr-4"
-            src="/logo_netZero.webp"
+            src="/logo/logo_netZero.webp"
             alt="Logo net zéro"
             title="net zéro"
             width={152}

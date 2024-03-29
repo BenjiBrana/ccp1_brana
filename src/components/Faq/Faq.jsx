@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 const faqs = [
   {
     id: 'faq1',
@@ -57,71 +58,74 @@ const faqs = [
 ];
 export default function Faq() {
   const [open, setOpen] = useState(null);
-  const handleClickOpen = (index) => {
-    if (open === index) {
-      setOpen(null);
+
+  const handleClickOpen = (id) => {
+    if (open === id) {
+      setOpen(null); // Ferme l'élément si c'est déjà ouvert
     } else {
-      setOpen(index);
+      setOpen(id); // Ouvre l'élément cliqué
     }
   };
+
   return (
     <div>
-      <section className="flex flex-col h-screen bg-primary w-full">
-        <h2
-          id="faq"
-          className="text-center font-titleFont font-bold text-3xl uppercase pb-8"
-        >
+      <section
+        id="faq"
+        className="flex flex-col tablette:h-auto bg-primary w-full"
+      >
+        <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           FAQ
         </h2>
-        {faqs.map((faq, index) => (
-          <>
-            <div
-              key={faq.id}
-              className="flex flex-col items-center w-full mb-4"
+        {faqs.map((faq) => (
+          <div
+            key={faq.id}
+            className="flex flex-col items-center w-full mb-4"
+          >
+            <h3
+              onClick={() => handleClickOpen(faq.id)}
+              className="faq justify-between font-titleFont font-bold bg-secondary rounded-t-lg w-full"
             >
-              <h3
-                onClick={() => handleClickOpen(index)}
-                className="faq justify-between font-titleFont font-bold bg-secondary rounded-t-lg  w-full"
-              >
-                {faq.title}
-
-                {open ? (
-                  <>
-                    <svg
-                      className="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                    </svg>
-                  </>
-                ) : (
-                  <>
-                    <svg
-                      className="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-                    </svg>
-                  </>
-                )}
-              </h3>
-
-              {open === index && (
-                <p className="faq justify-center rounded-b-lg">
-                  {faq.contenu}
-                </p>
+              {faq.title}
+              {open === faq.id ? (
+                <Image
+                  className="animate-spin-slow"
+                  src="/logo/chevron_up.svg"
+                  alt="Logo chevron up"
+                  title="Logo pour fermer la réponse"
+                  width={25}
+                  height={25}
+                />
+              ) : (
+                <Image
+                  className="animate-spin-slow"
+                  src="/logo/chevron_down.svg"
+                  alt="Logo chevron down"
+                  title="Logo pour voir la réponse"
+                  width={25}
+                  height={25}
+                />
               )}
+            </h3>
+
+            <div
+              className={`w-1/2 tablette:w-4/6 mobile:w-4/5 border rounded-b-lg faq-content overflow-hidden transition-opacity duration-300 ${
+                open === faq.id
+                  ? 'opacity-100 max-h-full transition-max-h duration-500'
+                  : 'opacity-0 max-h-0 transition-max-h duration-300'
+              }`}
+            >
+              <p
+                className={`rounded-b-lg p-4 ${
+                  open !== faq.id && 'hidden'
+                }`}
+              >
+                {faq.contenu}
+              </p>
             </div>
-          </>
+          </div>
         ))}
         <div className="flex justify-center mt-12">
-          <a
-            href="#"
-            className="border cursor-pointer rounded-lg p-4 bg-red-500 text-textColor  text-center text-xl font-bold"
-            type="button"
-          >
+          <a href="#" className="cta">
             Vous n'avez pas trouvé votre réponse, cliquez ici
           </a>
         </div>

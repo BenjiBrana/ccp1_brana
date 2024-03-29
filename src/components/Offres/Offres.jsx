@@ -4,7 +4,7 @@ const offres = [
     id: 'offre1',
     titleImg: 'Photo offre 1',
     alt: 'offre 1',
-    lien: './transformation_numérique.jpg',
+    lien: './images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
@@ -13,7 +13,7 @@ const offres = [
     id: 'offre2',
     titleImg: 'Photo offre 2',
     alt: 'offre 2',
-    lien: './transformation_numérique.jpg',
+    lien: './images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
@@ -22,7 +22,7 @@ const offres = [
     id: 'offre3',
     titleImg: 'Photo offre 3',
     alt: 'offre 3',
-    lien: './transformation_numérique.jpg',
+    lien: './images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
@@ -31,11 +31,11 @@ const offres = [
 export default function Offres() {
   return (
     <div>
-      <section className="flex flex-col items-center bg-primary mb-40">
-        <h2
-          id="offres"
-          className="text-center font-titleFont font-bold text-3xl uppercase pb-8"
-        >
+      <section
+        id="offres"
+        className="flex flex-col  items-center bg-primary mb-40"
+      >
+        <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Offres
         </h2>
 
@@ -44,7 +44,7 @@ export default function Offres() {
             <div className="card" key={offre.id}>
               <div className="w-full">
                 <Image
-                  className="rounded-lg shadow-2xl w-full"
+                  className="rounded-t-lg shadow-2xl w-full"
                   src={`/${offre.lien}`}
                   alt={offre.alt}
                   title={offre.titleImg}
@@ -52,16 +52,12 @@ export default function Offres() {
                   height={200}
                 />
               </div>
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center p-4">
                 <h3 className="font-bold font-titleFont py-4">
                   {offre.titleoffre}
                 </h3>
                 <p className=" p-2 pb-4">{offre.contenu}</p>
-                <a
-                  href="#"
-                  className="border cursor-pointer rounded-lg p-2 bg-red-500 text-textColor text-center text-xl font-bold"
-                  type="button"
-                >
+                <a href="#" className="cta">
                   Devis gratuit
                 </a>
               </div>

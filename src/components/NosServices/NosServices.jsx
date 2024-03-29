@@ -4,7 +4,7 @@ const articles = [
     id: 'article1',
     titleImg: 'Photo conseil pour la transformation numérique',
     alt: 'Transformation numérique',
-    lien: './transformation_numérique.jpg',
+    lien: './images/transformation_numérique.webp',
     class: 'article',
     titleArticle: 'Conseil pour la transformation numérique',
     contenu:
@@ -14,7 +14,7 @@ const articles = [
     id: 'article2',
     titleImg: 'Photo audit d’entreprise',
     alt: 'Audit d’entreprise',
-    lien: './audit_entreprise.jpg',
+    lien: './images/audit_entreprise.webp',
     class: 'articleReverse',
     titleArticle: 'Audit d’entreprise',
     contenu:
@@ -24,7 +24,7 @@ const articles = [
     id: 'article3',
     titleImg: 'Photo concernant la commmunication et le webmarketing',
     alt: 'Communication et webmarketing',
-    lien: './communication_webmarketing.jpg',
+    lien: './images/communication_webmarketing.webp',
     class: 'article',
     titleArticle: 'Stratégie de communication et de webmarketing',
     contenu:
@@ -34,7 +34,7 @@ const articles = [
     id: 'article4',
     titleImg: 'Photo concernant la campagnes publicitaires',
     alt: 'Campagnes publicitaires',
-    lien: './campagnes_publicitaires.jpg',
+    lien: './images/campagnes_publicitaires.webp',
     class: 'articleReverse',
     titleArticle: 'Offre et mise en place de campagnes publicitaires',
     contenu:
@@ -44,7 +44,7 @@ const articles = [
     id: 'article5',
     titleImg: 'Photo concernant la Création d’identité visuelle',
     alt: 'Création d’identité visuelle',
-    lien: './identite_visuelle.jpg',
+    lien: './images/identite_visuelle.webp',
     class: 'article',
     titleArticle: 'Création d’identité visuelle',
     contenu:
@@ -55,7 +55,7 @@ const articles = [
     titleImg:
       'Photo concernant le Développement web et reseaux sociaux',
     alt: 'Développement web et reseaux sociaux',
-    lien: './dev_web_rs.jpg',
+    lien: './images/dev_web_rs.webp',
     class: 'articleReverse',
     titleArticle: 'Développement web et gestion des réseaux sociaux',
     contenu:
@@ -65,7 +65,7 @@ const articles = [
     id: 'article7',
     titleImg: 'Photo concernant le community management',
     alt: 'Community management',
-    lien: './community_management.jpg',
+    lien: './images/community_management.webp',
     class: 'article',
     titleArticle: 'Service de community management',
     contenu:
@@ -75,11 +75,8 @@ const articles = [
 export default function NosServices() {
   return (
     <div>
-      <section className="flex flex-col bg-primary">
-        <h2
-          id="services"
-          className="text-center font-titleFont font-bold text-3xl uppercase pb-8"
-        >
+      <section id="services" className="flex flex-col bg-primary">
+        <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Services
         </h2>
         {articles.map((article) => (
@@ -99,11 +96,7 @@ export default function NosServices() {
               <p className="xl:text-xl lg:text-lg  leading-10">
                 {article.contenu}
               </p>
-              <a
-                href="#"
-                className="border cursor-pointer rounded-lg p-2 bg-red-500 text-textColor text-center text-xl font-bold"
-                type="button"
-              >
+              <a href="#" className="cta">
                 Pour plus d'informations, cliquez ici
               </a>
             </div>

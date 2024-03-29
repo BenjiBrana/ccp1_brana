@@ -29,15 +29,19 @@
 }
 
 .card {
-    @apply flex flex-col items-center border border-black/20 w-1/4 m-4 p-4 rounded-lg h-auto shadow-lg hover:scale-105;
+    @apply flex flex-col items-center border border-black/20 lg:w-5/12 xl:w-2/6 2xl:w-1/4 tablette:w-3/4 mobile:w-full mobile:mx-0 m-4 rounded-lg h-auto shadow-lg hover:scale-105;
+}
+
+.cta {
+    @apply border cursor-pointer rounded-lg p-4 bg-red-500 text-textColor text-center text-xl font-bold hover:scale-110;
 }
 
 .faq {
-    @apply border w-1/2 flex p-4 cursor-pointer;
+    @apply border w-1/2 tablette:w-4/6 mobile:w-4/5 flex p-4 cursor-pointer;
 }
 
 .arrowTop {
-    @apply z-10 flex items-center justify-center border w-12 tablette:w-6 h-12 tablette:h-6 rounded-full fixed bottom-0 right-0 m-2 hover:bg-secondary;
+    @apply z-10 flex items-center justify-center border w-10 h-10 tablette:w-6 tablette:h-6 rounded-full fixed bottom-0 right-0 m-2 hover:bg-secondary;
 }
 
 .btnGroup {
@@ -45,7 +49,7 @@
 }
 
 .buttonMode {
-    @apply bg-gray-500/50 border-0 rounded-full my-2 mx-0 cursor-pointer p-1 hover:bg-red-500 hover:border-2 hover:border-black;
+    @apply border-0 rounded-full my-4 mx-0 cursor-pointer p-1 hover:bg-red-500 hover:border-2 hover:border-black/50;
 }
 
 .darkMode {
