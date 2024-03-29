@@ -33,7 +33,7 @@
 }
 
 .faq {
-    @apply border w-1/2 flex justify-center p-2;
+    @apply border w-1/2 flex p-4 cursor-pointer;
 }
 
 .arrowTop {
@@ -46,4 +46,8 @@
 
 .buttonMode {
     @apply bg-gray-500/50 border-0 rounded-full my-2 mx-0 cursor-pointer p-1 hover:bg-red-500 hover:border-2 hover:border-black;
+}
+
+.darkMode {
+    @apply bg-textColor text-primary fill-primary border-primary
 }

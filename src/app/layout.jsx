@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body
         id="top"
-        className="font-textFont text-textColor bg-primary"
+        className="changeMode font-textFont text-textColor bg-primary"
       >
         <Header />
         {children}

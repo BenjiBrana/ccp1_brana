@@ -66,7 +66,7 @@ export default function Faq() {
   };
   return (
     <div>
-      <section className="flex flex-col  bg-primary w-full">
+      <section className="flex flex-col h-screen bg-primary w-full">
         <h2
           id="faq"
           className="text-center font-titleFont font-bold text-3xl uppercase pb-8"
@@ -77,24 +77,49 @@ export default function Faq() {
           <>
             <div
               key={faq.id}
-              className="flex flex-col items-center w-full mb-2"
+              className="flex flex-col items-center w-full mb-4"
             >
               <h3
                 onClick={() => handleClickOpen(index)}
-                className="faq font-titleFont font-bold bg-secondary rounded-t-lg cursor-pointer"
+                className="faq justify-between font-titleFont font-bold bg-secondary rounded-t-lg  w-full"
               >
                 {faq.title}
+
+                {open ? (
+                  <>
+                    <svg
+                      className="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                    </svg>
+                  </>
+                ) : (
+                  <>
+                    <svg
+                      className="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                    </svg>
+                  </>
+                )}
               </h3>
+
               {open === index && (
-                <p className="faq rounded-b-lg">{faq.contenu}</p>
+                <p className="faq justify-center rounded-b-lg">
+                  {faq.contenu}
+                </p>
               )}
             </div>
           </>
         ))}
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-12">
           <a
             href="#"
-            className="border cursor-pointer rounded-lg p-2 bg-red-500 text-textColor  text-center text-xl font-bold"
+            className="border cursor-pointer rounded-lg p-4 bg-red-500 text-textColor  text-center text-xl font-bold"
             type="button"
           >
             Vous n'avez pas trouvé votre réponse, cliquez ici
