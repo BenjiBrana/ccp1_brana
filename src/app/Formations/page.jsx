@@ -34,7 +34,7 @@ const formations = [
 export default function Formations() {
   return (
     <section
-      id="formations"
+      id="Formations"
       className="flex flex-col items-center bg-primary mb-40"
     >
       <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">

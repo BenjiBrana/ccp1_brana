@@ -7,16 +7,16 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuItemClick(targetId) {
-    const targetElement = document.querySelector(targetId);
+    const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: 'smooth',
       });
-      // Fermer le menu après avoir cliqué sur un élément de la liste
       toggleMenu();
     }
   }
+
   // Utilisez toggle pour ajouter ou supprimer la classe
   function toggleMenu() {
     setMenuOpen(!menuOpen);
@@ -49,14 +49,14 @@ export default function Header() {
   }, []);
 
   const items = [
-    { id: 'item1', lienItem: '#services', name: 'Services' },
-    { id: 'item2', lienItem: '#realisations', name: 'Réalisations' },
-    { id: 'item3', lienItem: '#formations', name: 'Formations' },
-    { id: 'item4', lienItem: '#offres', name: 'Offres' },
-    { id: 'item5', lienItem: '#faq', name: 'FAQ' },
-    { id: 'item6', lienItem: '#blog', name: 'Blog' },
-    { id: 'item7', lienItem: '#evenement', name: 'Evènement' },
-    { id: 'item8', lienItem: '#contact', name: 'Contact' },
+    { id: 'Services', name: 'Services' },
+    { id: 'Realisations', name: 'Réalisations' },
+    { id: 'Formations', name: 'Formations' },
+    { id: 'Offres', name: 'Offres' },
+    // { id: 'faq', name: 'FAQ' },
+    // { id: 'blog', name: 'Blog' },
+    // { id: 'evenement', name: 'Evènement' },
+    { id: 'Contact', name: 'Contact' },
   ];
 
   return (
@@ -89,9 +89,10 @@ export default function Header() {
                 menuOpen ? 'fade-out' : ''
               }`}
               key={item.id}
-              onClick={() => handleMenuItemClick(item.lienItem)}
+              onClick={() => handleMenuItemClick(`/${item.id}`)} // Utilisez simplement `/${item.id}` comme targetId
             >
-              <Link href={item.lienItem}>{item.name}</Link>
+              <Link href={`/${item.id}`}>{item.name}</Link>{' '}
+              {/* Utilisez simplement `/${item.id}` comme href */}
             </li>
           ))}
         </ul>
@@ -152,6 +153,35 @@ export default function Header() {
           )}
         </div>
       </nav>
+      <section className="flex tablette:flex-col items-center bg-textColor">
+        <div className="w-full flex  justify-center h-16">
+          <h1 className="flex items-end font-titleFont font-bold text-4xl mobile:text-2xl  p-2 text-primary">
+            Rural <b className="pl-1 text-tertinary ">W</b>eb Factory
+          </h1>
+        </div>
+        <div class="search flex justify-center my-10 w-full">
+          <input
+            class="border border-borderColor shadow shadow-white w-1/4 rounded-l-lg px-2 tablette:w-2/4"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Saisissez votre recherche"
+          />
+          <button
+            class="btn shadow rounded-r-lg shadow-white"
+            type="submit"
+          >
+            <img
+              class="border border-borderColor rounded-r-lg"
+              src="/logo/logo_search.webp"
+              alt="Logo search"
+              title="Logo de recherche"
+              width="45"
+              height="45"
+            />
+          </button>
+        </div>
+      </section>
     </header>
   );
 }

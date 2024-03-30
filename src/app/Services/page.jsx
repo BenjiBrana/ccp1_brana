@@ -75,7 +75,7 @@ const articles = [
 export default function NosServices() {
   return (
     <div>
-      <section id="services" className="flex flex-col bg-primary">
+      <section id="Services" className="flex flex-col bg-primary">
         <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Services
         </h2>

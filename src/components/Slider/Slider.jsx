@@ -22,29 +22,14 @@ const articles = [
 
 export default function MySlider() {
   const [page, setPage] = useState(1);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    // Vérifier si toutes les images sont chargées
-    const images = articles.map(
-      (article) => (new Image().src = article.image)
-    );
-    Promise.all(images)
-      .then(() => setImagesLoaded(true))
-      .catch((error) =>
-        console.error('Erreur lors du chargement des images', error)
-      );
+    const interval = setInterval(() => {
+      setPage((prev) => (prev === articles.length ? 1 : prev + 1));
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    if (imagesLoaded) {
-      const interval = setInterval(() => {
-        setPage((prev) => (prev === articles.length ? 1 : prev + 1));
-      }, 5000);
-
-      return () => clearInterval(interval);
-    }
-  }, [imagesLoaded]);
 
   const handlePagePrecedante = () => {
     setPage((prev) => (prev === 1 ? articles.length : prev - 1));
@@ -53,10 +38,6 @@ export default function MySlider() {
   const handlePageSuivante = () => {
     setPage((prev) => (prev === articles.length ? 1 : prev + 1));
   };
-
-  if (!imagesLoaded) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <section className="relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center bg-primary">
