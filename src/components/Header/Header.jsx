@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   function handleMenuItemClick(targetId) {
     const targetElement = document.getElementById(targetId);
 
@@ -111,13 +110,13 @@ export default function Header() {
                 width={30}
                 height={30}
               />
-              <div class="btnGroup">
+              <div className="btnGroup">
                 <button
                   className="buttonMode bg-blue-500/50"
                   id="nightModeBtn"
                 >
                   <Image
-                    class="moon  h-5 w-5"
+                    className="moon  h-5 w-5"
                     src="/logo/moon.svg"
                     alt="Logo dark mode"
                     title="Logo pour activer le dark mode"
@@ -130,7 +129,7 @@ export default function Header() {
                   id="dayModeBtn"
                 >
                   <Image
-                    class="sun  h-5 w-5"
+                    className="sun  h-5 w-5"
                     src="/logo/sun.svg"
                     alt="Logo light mode"
                     title="Logo pour activer le light mode"
@@ -159,20 +158,20 @@ export default function Header() {
             Rural <b className="pl-1 text-tertinary ">W</b>eb Factory
           </h1>
         </div>
-        <div class="search flex justify-center my-10 w-full">
+        <div className="search flex justify-center my-10 w-full">
           <input
-            class="border border-borderColor shadow shadow-white w-1/4 rounded-l-lg px-2 tablette:w-2/4"
+            className="border border-borderColor shadow shadow-white w-1/4 rounded-l-lg px-2 tablette:w-2/4"
             type="search"
             name="search"
             id="search"
             placeholder="Saisissez votre recherche"
           />
           <button
-            class="btn shadow rounded-r-lg shadow-white"
+            className="btn shadow rounded-r-lg shadow-white"
             type="submit"
           >
             <img
-              class="border border-borderColor rounded-r-lg"
+              className="border border-borderColor rounded-r-lg"
               src="/logo/logo_search.webp"
               alt="Logo search"
               title="Logo de recherche"
