@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const formations = [
   {
     id: 'formation1',
@@ -57,9 +58,9 @@ export default function Formations() {
             <p className="xl:text-xl lg:text-lg  leading-10">
               {formation.contenu}
             </p>
-            <a href="#" className="cta">
+            <Link href="/Contact" className="cta">
               Pour plus d'informations, cliquez ici
-            </a>
+            </Link>
           </div>
         </article>
       ))}

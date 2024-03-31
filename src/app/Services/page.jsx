@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const articles = [
   {
     id: 'article1',
@@ -96,9 +97,9 @@ export default function NosServices() {
               <p className="xl:text-xl lg:text-lg  leading-10">
                 {article.contenu}
               </p>
-              <a href="#" className="cta">
+              <Link href="/Contact" className="cta">
                 Pour plus d'informations, cliquez ici
-              </a>
+              </Link>
             </div>
           </article>
         ))}

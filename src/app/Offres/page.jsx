@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const offres = [
   {
     id: 'offre1',
@@ -57,9 +58,9 @@ export default function Offres() {
                   {offre.titleoffre}
                 </h3>
                 <p className=" p-2 pb-4">{offre.contenu}</p>
-                <a href="#" className="cta">
+                <Link href="/Contact" className="cta">
                   Devis gratuit
-                </a>
+                </Link>
               </div>
             </div>
           ))}
