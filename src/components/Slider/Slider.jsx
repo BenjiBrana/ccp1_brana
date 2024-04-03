@@ -50,29 +50,31 @@ export default function MySlider() {
               : 'opacity-0 pointer-events-none'
           }`}
         >
-          {/* Contenu de l'article */}
-          <div className="z-20 absolute left-1/2 border-2 border-textColor/20 -translate-x-1/2 top-0 -translate-y-full w-full py-3 px-6 bg-secondary rounded-t-lg">
-            <h2 className="text-4xl tracking-widest py-6 font-titleFont text-black font-bold text-center">
+          {/* Titre de l'article */}
+          <div className=" absolute left-1/2 border-2 border-textColor/20 -translate-x-1/2 top-0 -translate-y-full w-full py-3 px-6 bg-secondary rounded-t-lg">
+            <h2 className="text-4xl mobile:text-xl tracking-widest py-6 font-titleFont text-black font-bold text-center">
               {article.title}
             </h2>
           </div>
+          {/* Image de l'article */}
           <Image
             className="h-full object-cover object-center max-w-full border-x-2 border-textColor/50"
             fill
             alt="Image slide"
             src={article.image}
           />
-          <div className="z-20 absolute left-1/2 border-2  border-textColor/20 -translate-x-1/2 bottom-0 translate-y-full w-full py-3 px-6 bg-secondary rounded-b-lg">
-            <p className="text-2xl mt-4 py-3 font-bold w-full text-center text-black">
+          {/* Contenu de l'article */}
+          <div className="absolute left-1/2 border-2  border-textColor/20 -translate-x-1/2 bottom-0 translate-y-full w-full py-3 px-6 bg-secondary rounded-b-lg">
+            <p className="text-2xl mobile:text-base mt-4 py-3 font-bold w-full text-center text-black">
               {article.contenu}
             </p>
           </div>
         </div>
       ))}
-
+      {/* Slide précédent */}
       <div
         onClick={handlePagePrecedante}
-        className="z-10 absolute flex h-16 hover:h-1/6 -translate-y-1/2 top-1/2 left-0 text-2xl font-semibold  rounded-r-lg overflow-hidden bg-primary/10 hover:shadow-tertinary  hover:shadow-md"
+        className="z-10 absolute flex h-16  -translate-y-1/2 top-1/2 left-0 text-2xl font-semibold  rounded-r-lg overflow-hidden bg-primary/10  hover:shadow-tertinary  hover:shadow-md"
       >
         <span className="flex hover:bg-tertinary/50 hover:border-tertinary  transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer  ">
           <Image
@@ -84,6 +86,7 @@ export default function MySlider() {
           />
         </span>
       </div>
+      {/* Slide suivant */}
       <div
         onClick={handlePageSuivante}
         className="z-10 absolute bg-primary/10 flex h-16 hover:h-1/6 -translate-y-1/2 top-1/2 right-0 text-2xl font-semibold  rounded-l-lg overflow-hidden hover:shadow-tertinary  hover:shadow-md"

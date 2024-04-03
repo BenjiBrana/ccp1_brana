@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   function handleMenuItemClick(targetId) {
     const targetElement = document.getElementById(targetId);
 
@@ -16,7 +17,6 @@ export default function Header() {
     }
   }
 
-  // Utilisez toggle pour ajouter ou supprimer la classe
   function toggleMenu() {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -34,6 +34,7 @@ export default function Header() {
         .querySelector('a')
         .getAttribute('href');
       handleMenuItemClick(targetId);
+      toggleMenu();
     }
 
     itemMenus.forEach((item) => {
@@ -52,31 +53,30 @@ export default function Header() {
     { id: 'Realisations', name: 'Réalisations' },
     { id: 'Formations', name: 'Formations' },
     { id: 'Offres', name: 'Offres' },
-    // { id: 'faq', name: 'FAQ' },
-    // { id: 'blog', name: 'Blog' },
-    // { id: 'evenement', name: 'Evènement' },
     { id: 'Contact', name: 'Contact' },
   ];
 
   return (
-    <header className="border-b text-textColor">
+    <header className="relative border-b text-textColor">
+      <div className="ml-4 cursor-pointer fixed mt-4 z-20">
+        <Link href="/">
+          <Image
+            className="imgCircle tablette:w-1/2 mobile:w-1/3  "
+            src="/circle_rwf.webp"
+            alt="Logo RWF"
+            title="Logo Rural Web Factory"
+            width={80}
+            height={80}
+          />
+        </Link>
+      </div>
       <nav
-        className={`flex w-full justify-between pt-4 fixed  items-start ${
-          menuOpen ? 'bg-primary/90 z-30' : 'bg-transparent z-10'
+        className={`flex justify-between pt-4 fixed right-1 items-start ${
+          menuOpen
+            ? 'bg-primary/90 z-30  w-full'
+            : 'bg-transparent z-10'
         }`}
       >
-        <div className="ml-4 cursor-pointer">
-          <Link href="/">
-            <Image
-              className="imgCircle tablette:w-1/2 mobile:w-1/3"
-              src="/circle_rwf.webp"
-              alt="Logo RWF"
-              title="Logo Rural Web Factory"
-              width={80}
-              height={80}
-            />
-          </Link>
-        </div>
         <ul
           className={`flex flex-col ${
             menuOpen ? 'h-screen' : 'hidden'
@@ -88,10 +88,10 @@ export default function Header() {
                 menuOpen ? 'fade-out' : ''
               }`}
               key={item.id}
-              onClick={() => handleMenuItemClick(`/${item.id}`)} // Utilisez simplement `/${item.id}` comme targetId
             >
-              <Link href={`/${item.id}`}>{item.name}</Link>{' '}
-              {/* Utilisez simplement `/${item.id}` comme href */}
+              <Link href={`/${item.id}`} onClick={toggleMenu}>
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>

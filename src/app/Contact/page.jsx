@@ -5,15 +5,23 @@ import React from 'react';
 export default function ContactForm() {
   return (
     <div className="flex flex-col items-center bg-primary p-8 rounded-lg ">
-      <h1 className="text-2xl font-semibold mb-4">Contact</h1>
+      <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
+        Contact
+      </h2>
       <form action="" className="w-1/2 ">
+        <h3 className="text-left font-titleFont font-bold text-xl uppercase underline pt-4 pb-8">
+          Demande d'informations / Devis
+        </h3>
         <div className="mb-4">
-          <label htmlFor="companyName" className="block font-medium">
+          <label
+            htmlFor="nomEntreprise"
+            className="block font-medium"
+          >
             Nom de l'Entreprise:
           </label>
           <input
             type="text"
-            id="companyName"
+            id="nomEntreprise"
             className="w-full border rounded-md p-2 shadow-md"
             placeholder="Entrez le nom de votre entreprise"
           />
@@ -78,7 +86,7 @@ export default function ContactForm() {
           type="submit"
           className="bg-tertinary text-white px-4 py-2 rounded-md hover:bg-secondary hover:text-black font-bold shadow-md"
         >
-          Envoyer
+          Envoyer le formulaire
         </button>
       </form>
     </div>

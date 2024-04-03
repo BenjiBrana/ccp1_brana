@@ -17,7 +17,7 @@
 /* Composants */
 
 .imgCircle {
-    @apply border shadow-xl rounded-full;
+    @apply border shadow-xl rounded-full z-10;
 }
 
 .article {

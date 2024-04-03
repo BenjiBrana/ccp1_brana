@@ -3,8 +3,10 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Section from '@/components/Section/Section';
 import MySlider from '@/components/Slider/Slider';
+import ParagrapheAccueil from '@/components/ParagrapheAccueil/ParagrapheAccueil';
+import Faq from '@/components/Faq/Faq';
 
-export default function Home({ children }) {
+export default function Page({ children }) {
   useEffect(() => {
     const handleClick = (e) => {
       e.preventDefault();
@@ -34,8 +36,8 @@ export default function Home({ children }) {
 
   return (
     <main>
-      <Section className="relative">
-        <div class="arrowTop">
+      <Section className="flex gap-2 relative">
+        <div className="arrowTop">
           <a href="#top" aria-label="Retour au début de la page">
             <Image
               className=" tablette:w-6 tablette:h-6"
@@ -47,8 +49,11 @@ export default function Home({ children }) {
             />
           </a>
         </div>
+
         <MySlider />
         {children}
+        <ParagrapheAccueil />
+        <Faq />
       </Section>
     </main>
   );

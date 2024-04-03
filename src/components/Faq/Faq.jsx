@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 const faqs = [
   {
     id: 'faq1',
@@ -58,12 +59,12 @@ const faqs = [
 ];
 export default function Faq() {
   const [open, setOpen] = useState(null);
-
+  // Ouvre l'élément cliqué/Ferme l'élément si ouvert
   const handleClickOpen = (id) => {
     if (open === id) {
-      setOpen(null); // Ferme l'élément si c'est déjà ouvert
+      setOpen(null);
     } else {
-      setOpen(id); // Ouvre l'élément cliqué
+      setOpen(id);
     }
   };
 
@@ -71,7 +72,7 @@ export default function Faq() {
     <div>
       <section
         id="faq"
-        className="flex flex-col tablette:h-auto bg-primary w-full"
+        className="flex flex-col tablette:h-auto bg-primary w-full mt-10"
       >
         <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           FAQ
@@ -125,9 +126,9 @@ export default function Faq() {
           </div>
         ))}
         <div className="flex justify-center mt-12">
-          <a href="#" className="cta">
+          <Link href="/Contact" className="cta">
             Vous n'avez pas trouvé votre réponse, cliquez ici
-          </a>
+          </Link>
         </div>
       </section>
     </div>

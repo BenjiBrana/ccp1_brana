@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 export default function Footer() {
   const liensReseauxSociaux = [
@@ -104,14 +105,16 @@ export default function Footer() {
           </li>
         </ul>
         <div className="flex items-center justify-center ">
-          <Image
-            className="rounded-md mr-4"
-            src="/logo/logo_netZero.webp"
-            alt="Logo net zéro"
-            title="net zéro"
-            width={152}
-            height={96}
-          />
+          <Link href="https://tree-nation.com/fr" target="_blank">
+            <Image
+              className="rounded-md mr-4"
+              src="/logo/logo_netZero.webp"
+              alt="Logo net zéro"
+              title="net zéro"
+              width={152}
+              height={96}
+            />
+          </Link>
         </div>
       </div>
     </footer>
