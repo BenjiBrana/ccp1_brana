@@ -143,7 +143,7 @@ export default function Header() {
             <Image
               id="menuIcon"
               className="h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black mobile:h-6 mobile:w-6  "
-              src="/logo/burger_menu.svg"
+              src="/logo/burger_Menu.svg"
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"
               width={30}
