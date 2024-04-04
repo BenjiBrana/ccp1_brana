@@ -6,26 +6,26 @@ export default function Footer() {
       id: 'rs1',
       title: 'Lien Linkedin',
       alt: 'Logo Linkedin',
-      lien: './logo/logo_linkedin.webp',
+      lien: './logo_linkedin.webp',
       url: 'https://www.linkedin.com/',
     },
     {
       id: 'rs2',
       title: 'Lien Facebook',
       alt: 'Logo Facebook',
-      lien: './logo/logo_fb.webp',
+      lien: './logo_fb.webp',
       url: 'https://www.facebook.com/',
     },
     {
       id: 'rs3',
       title: 'Lien X',
-      lien: './logo/logo_x.webp',
+      lien: './logo_x.webp',
       url: 'https://twitter.com/',
     },
     {
       id: 'rs4',
       title: 'Lien Youtube',
-      lien: './logo/logo_ytb.webp',
+      lien: './logo_ytb.webp',
       url: 'https://www.youtube.com/?hl=FR',
     },
   ];
@@ -37,7 +37,7 @@ export default function Footer() {
             <a className="cursor-pointer" href={lienReseauSocial.url}>
               <Image
                 className="imgCircle h-12"
-                src={lienReseauSocial.lien}
+                src={`/logo/${lienReseauSocial.lien}`}
                 alt={lienReseauSocial.alt}
                 title={lienReseauSocial.title}
                 width={50}
