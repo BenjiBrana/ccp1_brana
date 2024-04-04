@@ -62,7 +62,7 @@ export default function Header() {
         <Link href="/">
           <Image
             className="imgCircle tablette:w-1/2 mobile:w-1/3  "
-            src="/circle_rwf.webp"
+            src="/logo/circle_rwf.webp"
             alt="Logo RWF"
             title="Logo Rural Web Factory"
             width={80}

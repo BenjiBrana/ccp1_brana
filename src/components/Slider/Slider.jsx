@@ -5,7 +5,7 @@ import Image from 'next/image';
 const articles = [
   {
     id: 'image1',
-    image: '/images/slide1.webp',
+    image: '/images/cdi_freelance.webp',
     title: 'CDI ou Freelance, comment choisir ?',
     contenu:
       'Découvrez les clés pour faire le choix crucial entre un contrat à durée indéterminée (CDI) et le statut de freelance, pour optimiser votre carrière professionnelle.',
@@ -58,7 +58,7 @@ export default function MySlider() {
           </div>
           {/* Image de l'article */}
           <Image
-            className="h-full object-cover object-center max-w-full border-x-2 border-textColor/50"
+            className="h-full object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             fill
             alt="Image slide"
             src={article.image}

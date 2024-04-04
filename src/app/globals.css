@@ -33,7 +33,7 @@
 }
 
 .cta {
-    @apply border cursor-pointer rounded-lg p-4 bg-red-500 text-textColor text-center text-xl font-bold hover:scale-110;
+    @apply border cursor-pointer rounded-lg p-4 bg-blue-300 text-textColor text-center text-xl font-bold hover:scale-110;
 }
 
 .faq {
