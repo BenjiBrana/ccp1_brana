@@ -37,7 +37,7 @@ export default function Footer() {
             <a className="cursor-pointer" href={lienReseauSocial.url}>
               <Image
                 className="imgCircle h-12"
-                src={`/logo/${lienReseauSocial.lien}`}
+                src={lienReseauSocial.lien}
                 alt={lienReseauSocial.alt}
                 title={lienReseauSocial.title}
                 width={50}
