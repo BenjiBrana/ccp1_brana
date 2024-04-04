@@ -58,7 +58,7 @@ export default function MySlider() {
           </div>
           {/* Image de l'article */}
           <Image
-            className="h-full object-contain tablette:object-cover max-w-full border-x-2 border-textColor/50"
+            className="h-full object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             fill
             alt="Image slide"
             src={article.image}
