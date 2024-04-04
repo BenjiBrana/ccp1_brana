@@ -125,7 +125,7 @@ export default function Faq() {
             </div>
           </div>
         ))}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center my-12">
           <Link href="/Contact" className="cta">
             Vous n'avez pas trouvé votre réponse, cliquez ici
           </Link>
