@@ -20,6 +20,10 @@
     @apply border shadow-xl rounded-full z-10;
 }
 
+.imageSize {
+    @apply h-full w-full object-cover;
+}
+
 .article {
     @apply flex items-center justify-evenly h-screen lg:flex-row tablette:flex-col tablette:my-8;
 }
