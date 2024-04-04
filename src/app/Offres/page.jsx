@@ -5,7 +5,7 @@ const offres = [
     id: 'offre1',
     titleImg: 'Photo offre 1',
     alt: 'offre 1',
-    lien: './images/transformation_numérique.webp',
+    lien: 'images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
@@ -14,7 +14,7 @@ const offres = [
     id: 'offre2',
     titleImg: 'Photo offre 2',
     alt: 'offre 2',
-    lien: './images/transformation_numérique.webp',
+    lien: 'images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',
@@ -23,7 +23,7 @@ const offres = [
     id: 'offre3',
     titleImg: 'Photo offre 3',
     alt: 'offre 3',
-    lien: './images/transformation_numérique.webp',
+    lien: 'images/transformation_numérique.webp',
     titleoffre: 'Conseil pour la transformation numérique',
     contenu:
       'Dans un monde de plus en plus numérique, il est essentiel pour les entreprises de s’adapter et d’évoluer. Notre équipe d’experts vous guide à travers ce processus, en vous aidant à comprendre les technologies émergentes et à les intégrer dans votre entreprise. Nous travaillons avec vous pour développer une stratégie numérique qui correspond à vos objectifs commerciaux et maximise votre potentiel de croissance.',

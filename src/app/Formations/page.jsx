@@ -5,7 +5,7 @@ const formations = [
     id: 'formation1',
     titleImg: 'Photo formation 1',
     alt: 'formaion 1',
-    lien: './images/developpeur_web.webp',
+    lien: 'images/developpeur_web.webp',
     class: 'article',
     titleFormation: 'Formation Développeur Web et Web Mobile',
     contenu:
@@ -15,7 +15,7 @@ const formations = [
     id: 'formation2',
     titleImg: 'Photo formation 2',
     alt: 'formation 2',
-    lien: './images/uxdesigner.webp',
+    lien: 'images/uxdesigner.webp',
     class: 'articleReverse',
     titleFormation: 'UX Designer',
     contenu:
@@ -25,7 +25,7 @@ const formations = [
     id: 'card3',
     titleImg: 'Photo formation 3',
     alt: 'formation 3',
-    lien: './images/concepteur_developpeur_application.webp',
+    lien: 'images/concepteur_developpeur_application.webp',
     class: 'article',
     titleFormation: "Formation Concepteur Développeur d'Application",
     contenu:
