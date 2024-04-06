@@ -126,7 +126,10 @@ export default function Faq() {
           </div>
         ))}
         <div className="flex justify-center my-12">
-          <Link href="/Contact" className="cta">
+          <Link
+            href="/Contact"
+            className="cta mobile:scale-90 mobile:hover:scale-100"
+          >
             Vous n'avez pas trouvé votre réponse, cliquez ici
           </Link>
         </div>

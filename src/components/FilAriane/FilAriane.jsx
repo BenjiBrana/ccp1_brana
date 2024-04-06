@@ -7,18 +7,20 @@ export default function FilAriane() {
   const [segments, setSegments] = useState([]);
 
   useEffect(() => {
-    const path = window.location.pathname.split('/');
-    path[0] = '/';
+    const path = window.location.pathname
+      .split('/')
+      .filter((crumb) => crumb !== '');
+    path.unshift('/');
     setSegments(path);
   }, []);
 
   return (
     <div className="flex flex-row mt-6 ml-6">
-      {segments.map((path, index) => (
+      {segments.map((pathSegment, index) => (
         <div className="flex flex-row" id="filAriane" key={index}>
           <span>
-            {path === '/' ? (
-              <Link href="/">
+            {pathSegment === '/' ? (
+              <Link href="/" key={pathSegment}>
                 <Image
                   className="rounded-full tablette:w-1/2 mobile:w-1/3"
                   src="/logo/home.svg"
@@ -29,7 +31,9 @@ export default function FilAriane() {
                 />
               </Link>
             ) : (
-              <Link href={`/${path}`}>{path}</Link>
+              <Link href={`/${pathSegment}`} key={pathSegment}>
+                {pathSegment}
+              </Link>
             )}
           </span>
           {index !== segments.length - 1 && (

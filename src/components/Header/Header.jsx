@@ -73,7 +73,7 @@ export default function Header() {
       <nav
         className={`flex justify-between pt-4 fixed right-1 items-start ${
           menuOpen
-            ? 'bg-primary/90 z-30  w-full'
+            ? 'bg-primary/90 z-40  w-full'
             : 'bg-transparent z-10'
         }`}
       >

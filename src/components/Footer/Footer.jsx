@@ -55,6 +55,23 @@ export default function Footer() {
           <h3 className="titleFont text-s">Aubeterre-sur-Dronne</h3>
         </div>
         <div className="flex flex-col items-center">
+          <span className="text-xs">
+            <Link
+              href="/Candidature"
+              className="flex gap-4 items-center cursor-pointer  text-textColor text-center text-md font-bold hover:scale-110"
+            >
+              <Image
+                src="/logo/laptop-code.svg"
+                alt="Logo accessibilité"
+                title="Accessibility"
+                width={32}
+                height={32}
+              />
+              Nous recrutons | Rejoigniez-nous
+            </Link>
+          </span>
+        </div>
+        <div className="flex flex-col items-center">
           <span className="text-s">
             &copy; RuralWebFactory | 2024
           </span>
@@ -67,7 +84,7 @@ export default function Footer() {
       <div className="mentions flex flex-1 justify-evenly gap-4 xl:flex-row lg:flex-col tablette:flex-row mobile:flex-col mobile:items-center tablette:my-16">
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col gap-4 justify-center">
           <li>
-            <a href="#">Mentions légales</a>
+            <a href="/MentionsLegales">Mentions légales</a>
           </li>
           <li>
             <a href="#">Confidentialité</a>
