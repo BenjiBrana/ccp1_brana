@@ -41,12 +41,12 @@ export default function Page({ children }) {
         <div className="arrowTop">
           <a href="#top" aria-label="Retour au début de la page">
             <Image
-              className=" tablette:w-6 tablette:h-6"
+              className="h-6 w-6"
               src="/logo/arrow_up.svg"
               alt="Logo flèche vers le haut"
               title="Logo pour retourner en haut de la page"
-              width={25}
-              height={25}
+              width={24}
+              height={24}
             />
           </a>
         </div>

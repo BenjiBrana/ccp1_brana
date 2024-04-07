@@ -61,6 +61,7 @@ export default function Footer() {
               className="flex gap-4 items-center cursor-pointer  text-textColor text-center text-md font-bold hover:scale-110"
             >
               <Image
+                className="h-8 w-8"
                 src="/logo/laptop-code.svg"
                 alt="Logo accessibilité"
                 title="Accessibility"
@@ -90,7 +91,7 @@ export default function Footer() {
             <a href="#">Confidentialité</a>
           </li>
           <li>
-            <a href="#">Cookies </a>{' '}
+            <a href="#">Cookies </a>
           </li>
         </ul>
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col  gap-4 justify-center">
@@ -107,7 +108,7 @@ export default function Footer() {
               Accessibilité : non conforme
             </a>
           </li>
-          <li className="flex   ">
+          <li className="flex">
             <a className="flex gap-4 items-center" href="#">
               <Image
                 className="imgCircle"
@@ -124,22 +125,22 @@ export default function Footer() {
         <div className="flex flex-col gap-2 items-center justify-center ">
           <Link href="https://tree-nation.com/fr" target="_blank">
             <Image
-              className="rounded-md mr-4"
+              className="rounded-md mr-4 w-36 h-16"
               src="/logo/logo_netZero.webp"
               alt="Logo net zéro"
               title="net zéro"
-              width={152}
-              height={96}
+              width={144}
+              height={64}
             />
           </Link>
           <Link href="https://fr.trustpilot.com/" target="_blank">
             <Image
-              className="rounded-md mr-4"
+              className="rounded-md mr-4 w-36 h-16"
               src="/logo/trustpilot.webp"
               alt="Logo trustpilot"
               title="trustpilot"
-              width={152}
-              height={96}
+              width={144}
+              height={64}
             />
           </Link>
         </div>

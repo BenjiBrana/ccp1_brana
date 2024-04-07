@@ -78,7 +78,7 @@ export default function MySlider() {
       >
         <span className="flex hover:bg-tertinary/50 hover:border-tertinary  transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer  ">
           <Image
-            className="mx-4 "
+            className="mx-4 w-auto h-auto"
             alt="Slide à droite"
             src="/logo/circle-chevron-left-solid.svg"
             width={40}
@@ -93,7 +93,7 @@ export default function MySlider() {
       >
         <span className="flex hover:bg-tertinary/50 hover:border-tertinary  transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer  ">
           <Image
-            className="mx-4"
+            className="mx-4 w-auto h-auto"
             alt="slide à gauche"
             src="/logo/circle-chevron-right-solid.svg"
             width={40}

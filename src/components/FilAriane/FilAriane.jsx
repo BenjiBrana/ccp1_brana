@@ -22,12 +22,12 @@ export default function FilAriane() {
             {pathSegment === '/' ? (
               <Link href="/" key={pathSegment}>
                 <Image
-                  className="rounded-full "
+                  className="rounded-full h-6 w-6"
                   src="/logo/home.svg"
                   alt="Logo home"
                   title="Logo retour accueil"
-                  width={25}
-                  height={25}
+                  width={24}
+                  height={24}
                 />
               </Link>
             ) : (

@@ -89,21 +89,21 @@ export default function Faq() {
               {faq.title}
               {open === faq.id ? (
                 <Image
-                  className="animate-spin-slow"
+                  className="animate-spin-slow h-6 w-6"
                   src="/logo/chevron_up.svg"
                   alt="Logo chevron up"
                   title="Logo pour fermer la réponse"
-                  width={25}
-                  height={25}
+                  width={24}
+                  height={24}
                 />
               ) : (
                 <Image
-                  className="animate-spin-slow"
+                  className="animate-spin-slow h-6 w-6"
                   src="/logo/chevron_down.svg"
                   alt="Logo chevron down"
                   title="Logo pour voir la réponse"
-                  width={25}
-                  height={25}
+                  width={24}
+                  height={24}
                 />
               )}
             </h3>
