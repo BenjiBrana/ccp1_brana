@@ -3,6 +3,5 @@
   "/page": "app/page.js",
   "/Formations/page": "app/Formations/page.js",
   "/Contact/page": "app/Contact/page.js",
-  "/Realisations/page": "app/Realisations/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/Realisations/page": "app/Realisations/page.js"
 }
