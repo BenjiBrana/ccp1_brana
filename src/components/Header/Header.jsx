@@ -163,6 +163,7 @@ export default function Header() {
             className="border border-borderColor shadow shadow-white w-1/4 rounded-l-lg px-2 tablette:w-2/4"
             type="search"
             name="search"
+            title="search bar"
             id="search"
             placeholder="Saisissez votre recherche"
           />
