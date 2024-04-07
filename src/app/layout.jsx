@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import FilAriane from '@/components/FilAriane/FilAriane';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Rural Web Factory',
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <FilAriane />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
