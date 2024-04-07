@@ -1,13 +1,10 @@
 # Activation de la réécriture d'URL
 RewriteEngine On
 
-# Activation de la mise en cache pour les images pendant 1 an
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType image/webp "access plus 1 year"
-</IfModule>
-
-# Activation de la mise en cache pour les fichiers SVG pendant 1 an
-<IfModule mod_expires.c>
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
