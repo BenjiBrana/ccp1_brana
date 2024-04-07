@@ -171,12 +171,12 @@ export default function Header() {
             type="submit"
           >
             <img
-              className="border border-borderColor rounded-r-lg"
+              className="border border-borderColor rounded-r-lg w-11 h-11"
               src="/logo/logo_search.webp"
               alt="Logo search"
               title="Logo de recherche"
-              width="45"
-              height="45"
+              width="44"
+              height="44"
             />
           </button>
         </div>
