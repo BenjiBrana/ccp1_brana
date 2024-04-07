@@ -83,7 +83,7 @@ export default function MySlider() {
         onClick={handlePagePrecedante}
         className="z-10 absolute flex h-16  -translate-y-1/2 top-1/2 left-0 text-2xl font-semibold  rounded-r-lg overflow-hidden bg-primary/10  hover:shadow-tertinary  hover:shadow-md"
       >
-        <span className="flex hover:bg-tertinary/50 hover:border-tertinary  transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer  ">
+        <span className="flex hover:bg-tertinary/50 hover:border-tertinary py-1 transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer  ">
           <Image
             className="mx-4 w-auto h-auto"
             alt="Slide à droite"
@@ -96,9 +96,9 @@ export default function MySlider() {
       {/* Slide suivant */}
       <div
         onClick={handlePageSuivante}
-        className="z-10 absolute bg-primary/10 flex h-16 hover:h-1/6 -translate-y-1/2 top-1/2 right-0 text-2xl font-semibold  rounded-l-lg overflow-hidden hover:shadow-tertinary  hover:shadow-md"
+        className="z-10 absolute bg-primary/10 flex h-16 -translate-y-1/2 top-1/2 right-0 text-2xl font-semibold  rounded-l-lg overflow-hidden hover:shadow-tertinary  hover:shadow-md"
       >
-        <span className="flex hover:bg-tertinary/50 hover:border-tertinary  transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer  ">
+        <span className="flex hover:bg-tertinary/50 py-1  hover:border-tertinary  transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer  ">
           <Image
             className="mx-4 w-auto h-auto"
             alt="slide à gauche"
