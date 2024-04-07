@@ -110,7 +110,7 @@ export default function Header() {
                 width={30}
                 height={30}
               />
-              <div className="btnGroup">
+              {/* <div className="btnGroup">
                 <button
                   className="buttonMode bg-blue-500/50"
                   id="nightModeBtn"
@@ -137,7 +137,7 @@ export default function Header() {
                     height={30}
                   />
                 </button>
-              </div>
+              </div> */}
             </>
           ) : (
             <Image
