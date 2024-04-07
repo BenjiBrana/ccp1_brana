@@ -84,7 +84,7 @@ export default function Header() {
         >
           {items.map((item) => (
             <li
-              className={`itemMenu font-bold text-3xl uppercase leading-10 hover:bg-textColor/80 hover:text-primary scale-95 hover:scale-125 hover:text-4xl hover:rounded-lg w-1/2 py-4 text-center transition-all ${
+              className={`itemMenu font-bold text-3xl mobile:text-lg uppercase leading-10 hover:bg-textColor/80 hover:text-primary scale-95 hover:scale-125 hover:text-4xl mobile:hover:text-xl hover:rounded-lg w-1/2 py-4 text-center transition-all ${
                 menuOpen ? 'fade-out' : ''
               }`}
               key={item.id}

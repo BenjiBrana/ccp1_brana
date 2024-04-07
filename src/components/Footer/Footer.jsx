@@ -36,12 +36,12 @@ export default function Footer() {
           <div key={lienReseauSocial.id}>
             <a className="cursor-pointer" href={lienReseauSocial.url}>
               <Image
-                className="imgCircle h-12"
+                className="imgCircle h-9 w-9"
                 src={`/logo/${lienReseauSocial.lien}`}
                 alt={lienReseauSocial.alt}
                 title={lienReseauSocial.title}
-                width={50}
-                height={50}
+                width={35}
+                height={35}
               />
             </a>
           </div>

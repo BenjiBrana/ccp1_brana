@@ -843,10 +843,6 @@ video {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -879,9 +875,6 @@ video {
 }
 .mt-8{
   margin-top: 2rem;
-}
-.mr-8{
-  margin-right: 2rem;
 }
 .block{
   display: block;
@@ -922,14 +915,14 @@ video {
 .h-\[calc\(100vh-70px\)\]{
   height: calc(100vh - 70px);
 }
+.h-auto{
+  height: auto;
+}
 .h-full{
   height: 100%;
 }
 .h-screen{
   height: 100vh;
-}
-.h-auto{
-  height: auto;
 }
 .max-h-0{
   max-height: 0px;
@@ -949,6 +942,9 @@ video {
 .w-12{
   width: 3rem;
 }
+.w-2\/3{
+  width: 66.666667%;
+}
 .w-3\/4{
   width: 75%;
 }
@@ -958,6 +954,9 @@ video {
 .w-5{
   width: 1.25rem;
 }
+.w-5\/6{
+  width: 83.333333%;
+}
 .w-8{
   width: 2rem;
 }
@@ -966,12 +965,6 @@ video {
 }
 .w-full{
   width: 100%;
-}
-.w-5\/6{
-  width: 83.333333%;
-}
-.w-2\/3{
-  width: 66.666667%;
 }
 .max-w-full{
   max-width: 100%;
@@ -1070,9 +1063,6 @@ video {
 }
 .rounded-md{
   border-radius: 0.375rem;
-}
-.rounded-sm{
-  border-radius: 0.125rem;
 }
 .rounded-xl{
   border-radius: 0.75rem;
@@ -1845,14 +1835,20 @@ video {
   .tablette\:w-4\/6{
     width: 66.666667%;
   }
+  .tablette\:w-5\/6{
+    width: 83.333333%;
+  }
   .tablette\:w-6{
     width: 1.5rem;
   }
   .tablette\:w-full{
     width: 100%;
   }
-  .tablette\:w-5\/6{
-    width: 83.333333%;
+  .tablette\:w-1\/4{
+    width: 25%;
+  }
+  .tablette\:w-1\/6{
+    width: 16.666667%;
   }
   .tablette\:flex-row{
     flex-direction: row;
@@ -1887,18 +1883,11 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-  .tablette\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 
 @media (max-width: 639px){
   .mobile\:mr-1{
     margin-right: 0.25rem;
-  }
-  .mobile\:mt-2{
-    margin-top: 0.5rem;
   }
   .mobile\:mt-0{
     margin-top: 0px;
@@ -1935,6 +1924,9 @@ video {
   }
   .mobile\:w-full{
     width: 100%;
+  }
+  .mobile\:w-screen{
+    width: 100vw;
   }
   .mobile\:scale-90{
     --tw-scale-x: .9;
@@ -1976,20 +1968,14 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .mobile\:hover\:scale-95:hover{
-    --tw-scale-x: .95;
-    --tw-scale-y: .95;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-  .mobile\:hover\:scale-90:hover{
-    --tw-scale-x: .9;
-    --tw-scale-y: .9;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
   .mobile\:hover\:scale-100:hover{
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .mobile\:hover\:text-xl:hover{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

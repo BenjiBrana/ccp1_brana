@@ -51,20 +51,20 @@ export default function MySlider() {
           }`}
         >
           {/* Titre de l'article */}
-          <div className=" absolute left-1/2 border-2 border-textColor/20 -translate-x-1/2 top-0 -translate-y-full w-full py-3 px-6 bg-secondary rounded-t-lg">
+          <div className=" absolute left-1/2 cursor-pointer border-2 border-textColor/20 -translate-x-1/2 top-0 -translate-y-full w-full py-3 px-6 bg-secondary rounded-t-lg">
             <h2 className="text-4xl mobile:text-xl tracking-widest py-6 font-titleFont text-black font-bold text-center">
               {article.title}
             </h2>
           </div>
           {/* Image de l'article */}
           <Image
-            className="h-full object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
+            className="h-full cursor-pointer object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             fill
             alt="Image slide"
             src={article.image}
           />
           {/* Contenu de l'article */}
-          <div className="absolute left-1/2 border-2  border-textColor/20 -translate-x-1/2 bottom-0 translate-y-full w-full py-3 px-6 bg-secondary rounded-b-lg">
+          <div className="absolute cursor-pointer left-1/2 border-2  border-textColor/20 -translate-x-1/2 bottom-0 translate-y-full w-full py-3 px-6 bg-secondary rounded-b-lg">
             <p className="text-2xl mobile:text-base mt-4 py-3 font-bold w-full text-center text-black">
               {article.contenu}
             </p>
