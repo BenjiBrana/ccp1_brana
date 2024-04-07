@@ -60,6 +60,7 @@ export default function MySlider() {
           <Image
             className="h-full cursor-pointer object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             fill
+            priority
             alt="Image slide"
             src={article.image}
           />
