@@ -121,13 +121,23 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <div className="flex items-center justify-center ">
+        <div className="flex flex-col gap-2 items-center justify-center ">
           <Link href="https://tree-nation.com/fr" target="_blank">
             <Image
               className="rounded-md mr-4"
               src="/logo/logo_netZero.webp"
               alt="Logo net zéro"
               title="net zéro"
+              width={152}
+              height={96}
+            />
+          </Link>
+          <Link href="https://fr.trustpilot.com/" target="_blank">
+            <Image
+              className="rounded-md mr-4"
+              src="/logo/trustpilot.webp"
+              alt="Logo trustpilot"
+              title="trustpilot"
               width={152}
               height={96}
             />
