@@ -1,46 +1,27 @@
-// server.js
-const { createServer } = require('http');
-const { parse } = require('url');
+const express = require('express');
 const next = require('next');
+const cacheHeaders = require('./Middleware/CacheHeaders'); // Importez le middleware que vous avez créé
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = 'localhost';
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
-// Créez une instance Next.js
-const app = next({ dev, hostname, port });
+const app = next({ dev });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-  createServer(async (req, res) => {
-    try {
-      // Analysez l'URL
-      const parsedUrl = parse(req.url, true);
-      const { pathname, query } = parsedUrl;
+  const server = express();
 
-      // Gérez les routes personnalisées
-      if (pathname === '/a') {
-        await app.render(req, res, '/a', query);
-      } else if (pathname === '/b') {
-        await app.render(req, res, '/b', query);
-      } else {
-        await handle(req, res, parsedUrl);
-      }
-    } catch (err) {
-      console.error(
-        'Erreur lors du traitement de la requête',
-        req.url,
-        err
-      );
-      res.statusCode = 500;
-      res.end('Erreur interne du serveur');
-    }
-  })
-    .once('error', (err) => {
-      console.error(err);
-      process.exit(1);
-    })
-    .listen(port, () => {
-      console.log(`> Prêt sur http://${hostname}:${port}`);
-    });
+  // Appliquer le middleware cacheHeaders
+  server.use(cacheHeaders);
+
+  // Gérer toutes les autres requêtes avec Next.js
+  server.all('*', (req, res) => {
+    return handle(req, res);
+  });
+
+  // Démarrer le serveur
+  server.listen(port, (err) => {
+    if (err) throw err;
+    console.log(`> Ready on http://localhost:${port}`);
+  });
 });
