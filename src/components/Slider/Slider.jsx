@@ -57,7 +57,7 @@ export default function MySlider() {
           {/* Titre de l'article */}
           <div className=" absolute left-1/2 cursor-pointer border-2 border-textColor/20 -translate-x-1/2 top-0 -translate-y-full w-full py-3 px-6 bg-secondary rounded-t-lg">
             <h2 className="text-4xl mobile:text-xl tracking-widest py-6 font-titleFont text-black font-bold text-center">
-              {article.title}
+              {article.titleArticle}
             </h2>
           </div>
           {/* Image de l'article */}
@@ -65,6 +65,8 @@ export default function MySlider() {
             className="h-full cursor-pointer object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             priority
             src={article.image}
+            alt={article.alt}
+            title={article.titleImage}
             width={1800}
             height={580}
           />
