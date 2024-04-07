@@ -19,12 +19,14 @@ export default function Footer() {
     {
       id: 'rs3',
       title: 'Lien X',
+      alt: 'Logo X',
       lien: 'logo_x.webp',
       url: 'https://twitter.com/',
     },
     {
       id: 'rs4',
       title: 'Lien Youtube',
+      alt: 'Logo Youtube',
       lien: 'logo_ytb.webp',
       url: 'https://www.youtube.com/?hl=FR',
     },
