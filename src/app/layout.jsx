@@ -2,7 +2,7 @@ import './globals.css';
 import React from 'react';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
-// import FilAriane from '@/components/FilAriane/FilAriane';
+import FilAriane from '@/components/FilAriane/FilAriane';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         className="changeMode font-textFont text-textColor bg-primary"
       >
         <Header />
-        {/* <FilAriane /> */}
+        <FilAriane />
         {children}
         <Footer />
         <SpeedInsights />

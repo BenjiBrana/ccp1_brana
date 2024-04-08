@@ -38,7 +38,7 @@ export default function Footer() {
           <div key={lienReseauSocial.id}>
             <a className="cursor-pointer" href={lienReseauSocial.url}>
               <Image
-                className="imgCircle h-9 w-9"
+                className="imgCircle h-9 w-9 hover:scale-110"
                 src={`/logo/${lienReseauSocial.lien}`}
                 alt={lienReseauSocial.alt}
                 title={lienReseauSocial.title}
@@ -78,22 +78,31 @@ export default function Footer() {
           <span className="text-s">
             &copy; RuralWebFactory | 2024
           </span>
-          <span className="text-xs">
+          <span className="text-xs hover:scale-110">
             Site réalisé par{' '}
-            <a href="https://branabenjamin.fr">Brana Benjamin</a>
+            <a
+              className="hover:font-bold"
+              href="https://branabenjamin.fr"
+            >
+              Brana Benjamin
+            </a>
           </span>
         </div>
       </div>
       <div className="mentions flex flex-1 justify-evenly gap-4 xl:flex-row lg:flex-col tablette:flex-row mobile:flex-col mobile:items-center tablette:my-16">
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col gap-4 justify-center">
-          <li>
+          <li className="hover:scale-110">
             <a href="/MentionsLegales">Mentions légales</a>
           </li>
           <li>
-            <a href="#">Confidentialité</a>
+            <a className="" href="#">
+              Confidentialité
+            </a>
           </li>
           <li>
-            <a href="#">Cookies </a>
+            <a className="" href="#">
+              Cookies{' '}
+            </a>
           </li>
         </ul>
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col  gap-4 justify-center">
