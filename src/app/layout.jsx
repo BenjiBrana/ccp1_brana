@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="URL_de_l'image_à_afficher"
+          content="https://ccp1-brana.vercel.app/_next/image?url=%2Flogo%2Fcircle_rwf.webp&w=96&q=75"
         />
         <meta
           property="og:url"
