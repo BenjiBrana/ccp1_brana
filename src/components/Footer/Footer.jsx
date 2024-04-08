@@ -65,8 +65,8 @@ export default function Footer() {
               <Image
                 className="h-8 w-8"
                 src="/logo/laptop-code.svg"
-                alt="Logo accessibilité"
-                title="Accessibility"
+                alt="Logo Travail"
+                title="Recrutement"
                 width={32}
                 height={32}
               />
