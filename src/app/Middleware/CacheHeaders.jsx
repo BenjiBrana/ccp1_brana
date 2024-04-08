@@ -1,9 +1,6 @@
 export default function cacheHeaders(req, res, next) {
   // Ajouter les en-têtes de sécurité
-  res.setHeader(
-    'Content-Security-Policy',
-    "script-src 'self' https://example.com"
-  );
+
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'DENY');
 

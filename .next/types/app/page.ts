@@ -1,4 +1,4 @@
-// File: C:\wamp64\www\CCI\ccp1_Brana\src\app\page.jsx
+// File: C:\wamp64\www\CCI\Nouveau dossier (2)\ccp1_brana\src\app\page.jsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
