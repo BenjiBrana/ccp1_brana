@@ -7,7 +7,8 @@ module.exports = {
           // Content Security Policy
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' https://ccp1-brana.vercel.app/",
+            value:
+              "default-src 'self'; script-src 'nonce-randomnonce' 'strict-dynamic' https:; object-src 'none'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; media-src 'self' https:; frame-src 'none'; font-src 'self' https:;",
           },
 
           // X-Content-Type-Options
