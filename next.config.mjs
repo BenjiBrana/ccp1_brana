@@ -9,7 +9,7 @@ module.exports = {
           // Content Security Policy
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' https://example.com",
+            value: "script-src 'self' https://ccp1-brana.vercel.app/",
           },
 
           // X-Content-Type-Options
