@@ -62,7 +62,7 @@ export default function MySlider() {
           </div>
           {/* Image de l'article */}
           <Image
-            className="h-full  object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
+            className="h-full w-full object-cover tablette:object-cover max-w-full border-x-2 border-textColor/50"
             priority
             src={article.image}
             alt={article.alt}
