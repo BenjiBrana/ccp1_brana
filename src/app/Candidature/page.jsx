@@ -28,7 +28,11 @@ export default function Candidature() {
       <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
         Candidature Libre
       </h2>
-      <form action="" className="w-1/2 " onSubmit={handleSubmit}>
+      <form
+        action=""
+        className="w-1/2 mobile:w-5/6"
+        onSubmit={handleSubmit}
+      >
         <h3 className="text-left font-titleFont font-bold text-xl uppercase underline pt-4 pb-8">
           Informations du Candidat
         </h3>
