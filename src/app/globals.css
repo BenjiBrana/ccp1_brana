@@ -33,7 +33,7 @@
 }
 
 .card {
-  @apply flex flex-col items-center border border-black/20 lg:w-5/12 xl:w-2/6 2xl:w-1/4 tablette:w-3/4 mobile:w-full mobile:mx-0 m-4 rounded-lg h-auto shadow-lg hover:scale-105;
+  @apply flex flex-col items-center border border-black/20 lg:w-5/12 xl:w-2/6 2xl:w-1/4 tablette:w-3/4 mobile:w-full mobile:mx-0 m-4 rounded-lg h-auto justify-between shadow-lg hover:scale-105;
 }
 
 .cta {

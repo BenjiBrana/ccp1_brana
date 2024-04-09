@@ -36,7 +36,11 @@ export default function Footer() {
       <div className="reseauxSociaux flex w-1/4 justify-evenly items-center tablette:w-full tablette:justify-center tablette:gap-8 tablette:mt-8 ">
         {liensReseauxSociaux.map((lienReseauSocial) => (
           <div key={lienReseauSocial.id}>
-            <a className="cursor-pointer" href={lienReseauSocial.url}>
+            <Link
+              className="cursor-pointer"
+              target="_blank"
+              href={lienReseauSocial.url}
+            >
               <Image
                 className="imgCircle h-9 w-9 hover:scale-110"
                 src={`/logo/${lienReseauSocial.lien}`}
@@ -45,7 +49,7 @@ export default function Footer() {
                 width={35}
                 height={35}
               />
-            </a>
+            </Link>
           </div>
         ))}
       </div>

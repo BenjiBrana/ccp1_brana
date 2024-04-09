@@ -11,35 +11,45 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Realisations/page": [
+    "/Candidature/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Realisations/page.js"
+      "static/chunks/app/Candidature/page.js"
+    ],
+    "/MentionsLegales/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/MentionsLegales/page.js"
     ],
     "/Services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Services/page.js"
     ],
-    "/Formations/page": [
+    "/Realisations/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Formations/page.js"
+      "static/chunks/app/Realisations/page.js"
     ],
     "/Offres/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Offres/page.js"
     ],
+    "/Formations/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Formations/page.js"
+    ],
     "/Contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Contact/page.js"
     ],
-    "/Candidature/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Candidature/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

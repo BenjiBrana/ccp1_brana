@@ -1,7 +1,8 @@
 {
+  "/Candidature/page": "app/Candidature/page.js",
+  "/page": "app/page.js",
+  "/MentionsLegales/page": "app/MentionsLegales/page.js",
   "/Realisations/page": "app/Realisations/page.js",
-  "/Formations/page": "app/Formations/page.js",
   "/Offres/page": "app/Offres/page.js",
-  "/Contact/page": "app/Contact/page.js",
-  "/Candidature/page": "app/Candidature/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
