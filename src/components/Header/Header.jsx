@@ -104,7 +104,7 @@ export default function Header() {
             <>
               <Image
                 id="closeIcon"
-                className="h-8 w-8 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+                className="h-8 w-8 mobile:h-12 mobile:w-12 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
                 src="/logo/close.svg"
                 alt="Logo fermeture"
                 title="Logo Rural Web Factory"
@@ -143,7 +143,7 @@ export default function Header() {
           ) : (
             <Image
               id="menuIcon"
-              className="h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black mobile:h-6 mobile:w-6  "
+              className="h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black "
               src="/logo/burger_Menu.svg"
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"
