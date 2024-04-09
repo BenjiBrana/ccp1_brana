@@ -90,7 +90,7 @@ export default function NosServices() {
               width={500}
               height={500}
             />
-            <div className="flex flex-col justify-evenly 2xl:w-1/4 xl:w-2/6 lg:w-2/6 tablette:w-2/3 mobile:w-10/12 tablette:py-12  h-3/4">
+            <div className="flex flex-col justify-evenly 2xl:w-1/4 xl:w-2/6 lg:w-2/6 tablette:w-2/3 mobile:w-10/12 tablette:py-12  h-full">
               <h3 className="font-titleFont font-bold text-3xl mobile:text-2xl leading-10 tablette:pb-8 tablette:text-center">
                 {article.titleArticle}
               </h3>

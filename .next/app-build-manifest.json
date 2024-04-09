@@ -15,36 +15,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Services/page.js"
-    ],
-    "/Realisations/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Realisations/page.js"
-    ],
-    "/Formations/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Formations/page.js"
-    ],
-    "/Offres/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Offres/page.js"
-    ],
-    "/Contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Contact/page.js"
-    ],
-    "/MentionsLegales/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/MentionsLegales/page.js"
-    ],
-    "/Candidature/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Candidature/page.js"
     ]
   }
 }

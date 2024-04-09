@@ -25,7 +25,7 @@
 }
 
 .article {
-  @apply flex items-center justify-evenly h-screen lg:flex-row tablette:flex-col tablette:my-8;
+  @apply flex items-center justify-evenly h-screen tablette:h-full lg:flex-row tablette:flex-col tablette:my-8;
 }
 
 .articleReverse {

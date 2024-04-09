@@ -1427,6 +1427,7 @@ video {
   .article{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    height: 100%;
     flex-direction: column;
   }
 }
@@ -1448,6 +1449,7 @@ video {
   .articleReverse{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    height: 100%;
     flex-direction: column;
   }
 }
