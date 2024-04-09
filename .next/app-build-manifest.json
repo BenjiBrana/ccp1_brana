@@ -11,10 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Services/page": [
+    "/Offres/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Services/page.js"
+      "static/chunks/app/Offres/page.js"
     ]
   }
 }

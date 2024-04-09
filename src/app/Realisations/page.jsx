@@ -61,7 +61,7 @@ export default function Realisation() {
     <div>
       <section
         id="Realisations"
-        className="flex flex-col  items-center bg-primary mb-40"
+        className="flex flex-col  items-center bg-primary mb-20"
       >
         <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Réalisation

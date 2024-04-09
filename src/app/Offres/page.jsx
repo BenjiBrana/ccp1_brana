@@ -54,7 +54,7 @@ export default function Offres() {
     <div>
       <section
         id="Offres"
-        className="flex flex-col  items-center bg-primary mb-40"
+        className="flex flex-col  items-center bg-primary mb-20"
       >
         <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Offres
