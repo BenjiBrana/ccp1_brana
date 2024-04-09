@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 export default function ContactForm() {
   const router = useRouter();
 
-  // Définir l'état pour chaque champ du formulaire
+  /* Définit l'état pour chaque champ du formulaire */
   const [nomEntreprise, setNomEntreprise] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -13,12 +13,12 @@ export default function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Vérifier si tous les champs requis sont remplis
+    /* Vérifie si tous les champs requis sont remplis */
     if (!nomEntreprise || !email || !phoneNumber || !message) {
       alert('Veuillez remplir tous les champs requis.');
       return;
     }
-    // Si tous les champs sont remplis, redirigez vers la page d'accueil
+    /* Si tous les champs sont remplis retour à l'accueil */
     router.push('/');
   };
 

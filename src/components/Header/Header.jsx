@@ -4,8 +4,9 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Header() {
+  /* indique si menu ouvert (fermer par defaut)*/
   const [menuOpen, setMenuOpen] = useState(false);
-
+  /* Si élément cliquer, défilement jusqu'à l'encre cible */
   function handleMenuItemClick(targetId) {
     const targetElement = document.getElementById(targetId);
 
@@ -16,7 +17,7 @@ export default function Header() {
       toggleMenu();
     }
   }
-
+  /* Empeche le défilement si le menu est ouvert */
   function toggleMenu() {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -25,7 +26,7 @@ export default function Header() {
       document.body.classList.remove('overflow-hidden');
     }
   }
-
+  /* Gestionnaire d'évenement au clique sur un élément du menu */
   useEffect(() => {
     const itemMenus = document.querySelectorAll('.itemMenu');
 

@@ -59,7 +59,7 @@ const faqs = [
 ];
 export default function Faq() {
   const [open, setOpen] = useState(null);
-  // Ouvre l'élément cliqué/Ferme l'élément si ouvert
+  /* Ouvre l'élément cliqué/Ferme l'élément si ouvert*/
   const handleClickOpen = (id) => {
     if (open === id) {
       setOpen(null);

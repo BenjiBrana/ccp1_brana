@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 export default function Candidature() {
   const router = useRouter();
 
-  // Définir l'état pour chaque champ du formulaire
+  /* Définit l'état pour chaque champ du formulaire*/
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
   const [email, setEmail] = useState('');
@@ -14,12 +14,12 @@ export default function Candidature() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Vérifier si tous les champs requis sont remplis
+    /* Vérifie si tous les champs requis sont remplis*/
     if (!cv || !email || !prenom || !nom || !message) {
       alert('Veuillez remplir tous les champs requis.');
       return;
     }
-    // Si tous les champs sont remplis, retour à la page d'accueil
+    /* Si tous les champs sont remplis retour à l'accueil*/
     router.push('/');
   };
 
