@@ -16,7 +16,7 @@ export default function FilAriane() {
   }, [url]);
 
   return (
-    <div className="flex flex-row mt-6 ml-6">
+    <div className="flex flex-row mt-6 ml-6 text-xl">
       {segments.map((pathSegment, index) => (
         <div className="flex flex-row" id="filAriane" key={index}>
           <span>
