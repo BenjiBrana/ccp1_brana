@@ -15,14 +15,14 @@ export default function Page({ children }) {
         .querySelector('a')
         .getAttribute('href');
       const targetElement = document.querySelector(targetId);
-
+      /*Si élément cible existe alors ça défile jusqu'à cette élément*/
       if (targetElement) {
         targetElement.scrollIntoView({
           behavior: 'smooth',
         });
       }
     };
-
+    /* Sélection et ajout évènement au clic de l'ancre btn arrowTOP  */
     const btnTop = document.querySelector('.arrowTop');
     if (btnTop) {
       btnTop.addEventListener('click', handleClick);

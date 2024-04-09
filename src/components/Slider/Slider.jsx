@@ -28,17 +28,18 @@ export default function MySlider() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
+    /* Slide automatique au bout d'un certain temps*/
     const interval = setInterval(() => {
       setPage((prev) => (prev === articles.length ? 1 : prev + 1));
     }, 5000);
-
+    /* Evite le slide automatique si on viens de changer manuellement */
     return () => clearInterval(interval);
   }, []);
-
+  /*Page précédente*/
   const handlePagePrecedante = () => {
     setPage((prev) => (prev === 1 ? articles.length : prev - 1));
   };
-
+  /*Page suivante*/
   const handlePageSuivante = () => {
     setPage((prev) => (prev === articles.length ? 1 : prev + 1));
   };
