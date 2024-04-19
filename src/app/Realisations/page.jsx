@@ -1,11 +1,18 @@
 import Image from 'next/image';
+<<<<<<< HEAD
+=======
 import Link from 'next/link';
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
 const cards = [
   {
     id: 'card1',
     titleImg: 'Photo card 1',
     alt: 'card 1',
+<<<<<<< HEAD
+    lien: './images/greenscape.webp',
+=======
     lien: 'images/greenscape.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'GreenScape ',
     contenu:
       'GreenScape est une entreprise spécialisée dans l’urban mining et la récupération de ressources à partir des déchets électroniques. Leur vision est de créer un avenir plus vert en favorisant la récupération intelligente des déchets électroniques. 🌿🌎',
@@ -14,7 +21,11 @@ const cards = [
     id: 'card2',
     titleImg: 'Photo card 2',
     alt: 'card 2',
+<<<<<<< HEAD
+    lien: './images/buildcraft.webp',
+=======
     lien: 'images/buildcraft.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'BuildCraft ',
     contenu:
       'BuildCraft est une entreprise innovante spécialisée dans la construction durable. Notre équipe de passionnés du bâtiment allie expertise technique et créativité pour concevoir des structures modernes et écologiques. 🏗️🌿',
@@ -23,7 +34,11 @@ const cards = [
     id: 'card3',
     titleImg: 'Photo card 3',
     alt: 'card 3',
+<<<<<<< HEAD
+    lien: './images/socialhub.webp',
+=======
     lien: 'images/socialhub.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'SocialHub ',
     contenu:
       'SocialHub est une plateforme novatrice qui connecte les individus, favorise les échanges et renforce les liens sociaux. Notre mission est de créer un espace virtuel où les gens peuvent partager des idées, collaborer et célébrer ensemble. 🌐🤝.',
@@ -32,7 +47,11 @@ const cards = [
     id: 'card4',
     titleImg: 'Photo card 4',
     alt: 'card 4',
+<<<<<<< HEAD
+    lien: './images/cafe_gourmard.webp',
+=======
     lien: 'images/cafe_gourmard.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'Café Gourmard',
     contenu:
       'Café Gourmard est un charmant café-barista qui allie passion pour le café et art de la dégustation. Notre équipe de baristas talentueux prépare des boissons exquises dans une ambiance chaleureuse. Venez savourer l’arôme et la convivialité chez nous ! ☕🌟',
@@ -41,7 +60,11 @@ const cards = [
     id: 'card5',
     titleImg: 'Photo card 5',
     alt: 'card 5',
+<<<<<<< HEAD
+    lien: './images/autofix.webp',
+=======
     lien: 'images/autofix.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'AutoFix ',
     contenu:
       'AutoFix est un réseau de garages spécialisé dans la réparation et la carrosserie automobile. Nos professionnels hautement qualifiés offrent des services pour toutes les marques et technologies. 🚗🔧',
@@ -50,7 +73,11 @@ const cards = [
     id: 'card6',
     titleImg: 'Photo card 6',
     alt: 'card 6',
+<<<<<<< HEAD
+    lien: './images/justicelink.webp',
+=======
     lien: 'images/justicelink.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     titleCard: 'JusticeLink ',
     contenu:
       'JusticeLink est un cabinet d’avocats spécialisé dans divers domaines juridiques. Notre équipe d’avocats expérimentés s’engage à fournir des services juridiques de haute qualité à nos clients. 📚 ⚖️',
@@ -61,7 +88,11 @@ export default function Realisation() {
     <div>
       <section
         id="Realisations"
+<<<<<<< HEAD
+        className="flex flex-col  items-center bg-primary mb-40"
+=======
         className="flex flex-col  items-center bg-primary mb-20"
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
       >
         <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
           Nos Réalisation
@@ -86,9 +117,12 @@ export default function Realisation() {
                 </h3>
                 <p className="card-text">{card.contenu}</p>
               </div>
+<<<<<<< HEAD
+=======
               <Link href="/" className="cta mb-6">
                 Visiter le site
               </Link>
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             </div>
           ))}
         </div>

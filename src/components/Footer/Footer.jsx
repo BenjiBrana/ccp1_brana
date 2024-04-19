@@ -6,28 +6,44 @@ export default function Footer() {
       id: 'rs1',
       title: 'Lien Linkedin',
       alt: 'Logo Linkedin',
+<<<<<<< HEAD
+      lien: './logo_linkedin.webp',
+=======
       lien: 'logo_linkedin.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
       url: 'https://www.linkedin.com/',
     },
     {
       id: 'rs2',
       title: 'Lien Facebook',
       alt: 'Logo Facebook',
+<<<<<<< HEAD
+      lien: './logo_fb.webp',
+=======
       lien: 'logo_fb.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
       url: 'https://www.facebook.com/',
     },
     {
       id: 'rs3',
       title: 'Lien X',
+<<<<<<< HEAD
+      lien: './logo_x.webp',
+=======
       alt: 'Logo X',
       lien: 'logo_x.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
       url: 'https://twitter.com/',
     },
     {
       id: 'rs4',
       title: 'Lien Youtube',
+<<<<<<< HEAD
+      lien: './logo_ytb.webp',
+=======
       alt: 'Logo Youtube',
       lien: 'logo_ytb.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
       url: 'https://www.youtube.com/?hl=FR',
     },
   ];
@@ -36,6 +52,18 @@ export default function Footer() {
       <div className="reseauxSociaux flex w-1/4 justify-evenly items-center tablette:w-full tablette:justify-center tablette:gap-8 tablette:mt-8 ">
         {liensReseauxSociaux.map((lienReseauSocial) => (
           <div key={lienReseauSocial.id}>
+<<<<<<< HEAD
+            <a className="cursor-pointer" href={lienReseauSocial.url}>
+              <Image
+                className="imgCircle h-12"
+                src={`/logo/${lienReseauSocial.lien}`}
+                alt={lienReseauSocial.alt}
+                title={lienReseauSocial.title}
+                width={50}
+                height={50}
+              />
+            </a>
+=======
             <Link
               className="cursor-pointer"
               target="_blank"
@@ -50,6 +78,7 @@ export default function Footer() {
                 height={35}
               />
             </Link>
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           </div>
         ))}
       </div>
@@ -61,6 +90,14 @@ export default function Footer() {
           <h3 className="titleFont text-s">Aubeterre-sur-Dronne</h3>
         </div>
         <div className="flex flex-col items-center">
+<<<<<<< HEAD
+          <span className="text-s">
+            &copy; RuralWebFactory | 2024
+          </span>
+          <span className="text-xs">
+            Site réalisé par{' '}
+            <a href="https://branabenjamin.fr">Brana Benjamin</a>
+=======
           <span className="text-xs">
             <Link
               href="/Candidature"
@@ -90,11 +127,22 @@ export default function Footer() {
             >
               Brana Benjamin
             </a>
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           </span>
         </div>
       </div>
       <div className="mentions flex flex-1 justify-evenly gap-4 xl:flex-row lg:flex-col tablette:flex-row mobile:flex-col mobile:items-center tablette:my-16">
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col gap-4 justify-center">
+<<<<<<< HEAD
+          <li>
+            <a href="#">Mentions légales</a>
+          </li>
+          <li>
+            <a href="#">Confidentialité</a>
+          </li>
+          <li>
+            <a href="#">Cookies </a>{' '}
+=======
           <li className="hover:scale-110">
             <a href="/MentionsLegales">Mentions légales</a>
           </li>
@@ -107,6 +155,7 @@ export default function Footer() {
             <a className="" href="#">
               Cookies{' '}
             </a>
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           </li>
         </ul>
         <ul className="flex xl:flex-col lg:flex-row tablette:flex-col  gap-4 justify-center">
@@ -123,7 +172,11 @@ export default function Footer() {
               Accessibilité : non conforme
             </a>
           </li>
+<<<<<<< HEAD
+          <li className="flex   ">
+=======
           <li className="flex">
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             <a className="flex gap-4 items-center" href="#">
               <Image
                 className="imgCircle"
@@ -137,6 +190,17 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+<<<<<<< HEAD
+        <div className="flex items-center justify-center ">
+          <Link href="https://tree-nation.com/fr" target="_blank">
+            <Image
+              className="rounded-md mr-4"
+              src="/logo/logo_netZero.webp"
+              alt="Logo net zéro"
+              title="net zéro"
+              width={152}
+              height={96}
+=======
         <div className="flex flex-col gap-2 items-center justify-center ">
           <Link href="https://tree-nation.com/fr" target="_blank">
             <Image
@@ -156,6 +220,7 @@ export default function Footer() {
               title="trustpilot"
               width={144}
               height={64}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             />
           </Link>
         </div>

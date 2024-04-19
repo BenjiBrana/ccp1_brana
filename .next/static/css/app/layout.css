@@ -879,6 +879,9 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
+.mt-12{
+  margin-top: 3rem;
+}
 .block{
   display: block;
 }
@@ -1175,6 +1178,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 .p-1{
   padding: 0.25rem;
@@ -1670,6 +1677,10 @@ video {
   }
 }
 
+.hover\:h-1\/6:hover{
+  height: 16.666667%;
+}
+
 .hover\:-translate-x-1:hover{
   --tw-translate-x: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1839,6 +1850,9 @@ video {
   .tablette\:h-full{
     height: 100%;
   }
+  .tablette\:h-6{
+    height: 1.5rem;
+  }
   .tablette\:w-1\/2{
     width: 50%;
   }
@@ -1862,6 +1876,9 @@ video {
   }
   .tablette\:w-full{
     width: 100%;
+  }
+  .tablette\:w-6{
+    width: 1.5rem;
   }
   .tablette\:flex-row{
     flex-direction: row;
@@ -1911,6 +1928,9 @@ video {
   .mobile\:h-24{
     height: 6rem;
   }
+  .mobile\:h-6{
+    height: 1.5rem;
+  }
   .mobile\:w-1\/3{
     width: 33.333333%;
   }
@@ -1937,6 +1957,9 @@ video {
   }
   .mobile\:w-full{
     width: 100%;
+  }
+  .mobile\:w-6{
+    width: 1.5rem;
   }
   .mobile\:scale-90{
     --tw-scale-x: .9;

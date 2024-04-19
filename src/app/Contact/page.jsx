@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+// components/ContactForm.js
+
+import React from 'react';
+
+export default function ContactForm() {
+=======
 'use client';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -22,16 +29,21 @@ export default function ContactForm() {
     router.push('/');
   };
 
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
   return (
     <div className="flex flex-col items-center bg-primary p-8 rounded-lg ">
       <h2 className="text-center font-titleFont font-bold text-3xl uppercase pt-4 pb-8">
         Contact
       </h2>
+<<<<<<< HEAD
+      <form action="" className="w-1/2 ">
+=======
       <form
         action=""
         className="w-1/2 mobile:w-5/6"
         onSubmit={handleSubmit}
       >
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
         <h3 className="text-left font-titleFont font-bold text-xl uppercase underline pt-4 pb-8">
           Demande d'informations / Devis
         </h3>
@@ -45,6 +57,10 @@ export default function ContactForm() {
           <input
             type="text"
             id="nomEntreprise"
+<<<<<<< HEAD
+            className="w-full border rounded-md p-2 shadow-md"
+            placeholder="Entrez le nom de votre entreprise"
+=======
             required
             pattern="[a-zA-Z\s]+"
             maxLength="50"
@@ -52,6 +68,7 @@ export default function ContactForm() {
             placeholder="Entrez le nom de votre entreprise"
             value={nomEntreprise}
             onChange={(e) => setNomEntreprise(e.target.value)}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           />
         </div>
         <div className="mb-4">
@@ -61,12 +78,17 @@ export default function ContactForm() {
           <input
             type="email"
             id="email"
+<<<<<<< HEAD
+            className="w-full border rounded-md p-2 shadow-md"
+            placeholder="Entrez votre adresse e-mail"
+=======
             required
             maxLength="50"
             className="w-full border rounded-md p-2 shadow-md"
             placeholder="Entrez votre adresse e-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           />
         </div>
         <div className="mb-4">
@@ -76,6 +98,10 @@ export default function ContactForm() {
           <input
             type="tel"
             id="phoneNumber"
+<<<<<<< HEAD
+            className="w-full border rounded-md p-2 shadow-md"
+            placeholder="Entrez votre numéro de téléphone"
+=======
             required
             pattern="[0-9\s]+"
             minLength="10"
@@ -84,6 +110,7 @@ export default function ContactForm() {
             placeholder="Entrez votre numéro de téléphone"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           />
         </div>
         <div className="mb-4">
@@ -106,7 +133,11 @@ export default function ContactForm() {
           </label>
           <label className="block">
             <input type="checkbox" className="mr-2 shadow-md" />
+<<<<<<< HEAD
+            Autre (précisez ci-dessous)
+=======
             Autres (précisez ci-dessous)
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           </label>
         </div>
         <div className="mb-4">
@@ -116,12 +147,17 @@ export default function ContactForm() {
           <textarea
             id="message"
             rows="4"
+<<<<<<< HEAD
+            className="w-full border rounded-md p-2 shadow-md"
+            placeholder="Écrivez votre message ici..."
+=======
             required
             maxLength="500"
             className="w-full border rounded-md p-2 shadow-md"
             placeholder="Écrivez votre message ici..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
           ></textarea>
         </div>
         <button
