@@ -11,25 +11,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Offres/page": [
+    "/Realisations/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Offres/page.js"
+      "static/chunks/app/Realisations/page.js"
     ],
-    "/Contact/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Contact/page.js"
-    ],
-    "/Services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Services/page.js"
-    ],
-    "/Candidature/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Candidature/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }
