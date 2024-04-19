@@ -5,7 +5,11 @@ const articles = [
     id: 'article1',
     titleImg: 'Photo conseil pour la transformation numérique',
     alt: 'Transformation numérique',
+<<<<<<< HEAD
     lien: './images/transformation_numérique.webp',
+=======
+    lien: 'images/transformation_numérique.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'article',
     titleArticle: 'Conseil pour la transformation numérique',
     contenu:
@@ -15,7 +19,11 @@ const articles = [
     id: 'article2',
     titleImg: 'Photo audit d’entreprise',
     alt: 'Audit d’entreprise',
+<<<<<<< HEAD
     lien: './images/audit_entreprise.webp',
+=======
+    lien: 'images/audit_entreprise.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'articleReverse',
     titleArticle: 'Audit d’entreprise',
     contenu:
@@ -25,7 +33,11 @@ const articles = [
     id: 'article3',
     titleImg: 'Photo concernant la commmunication et le webmarketing',
     alt: 'Communication et webmarketing',
+<<<<<<< HEAD
     lien: './images/communication_webmarketing.webp',
+=======
+    lien: 'images/communication_webmarketing.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'article',
     titleArticle: 'Stratégie de communication et de webmarketing',
     contenu:
@@ -35,7 +47,11 @@ const articles = [
     id: 'article4',
     titleImg: 'Photo concernant la campagnes publicitaires',
     alt: 'Campagnes publicitaires',
+<<<<<<< HEAD
     lien: './images/campagnes_publicitaires.webp',
+=======
+    lien: 'images/campagnes_publicitaires.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'articleReverse',
     titleArticle: 'Offre et mise en place de campagnes publicitaires',
     contenu:
@@ -45,7 +61,11 @@ const articles = [
     id: 'article5',
     titleImg: 'Photo concernant la Création d’identité visuelle',
     alt: 'Création d’identité visuelle',
+<<<<<<< HEAD
     lien: './images/identite_visuelle.webp',
+=======
+    lien: 'images/identite_visuelle.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'article',
     titleArticle: 'Création d’identité visuelle',
     contenu:
@@ -56,7 +76,11 @@ const articles = [
     titleImg:
       'Photo concernant le Développement web et reseaux sociaux',
     alt: 'Développement web et reseaux sociaux',
+<<<<<<< HEAD
     lien: './images/dev_web_rs.webp',
+=======
+    lien: 'images/dev_web_rs.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'articleReverse',
     titleArticle: 'Développement web et gestion des réseaux sociaux',
     contenu:
@@ -66,7 +90,11 @@ const articles = [
     id: 'article7',
     titleImg: 'Photo concernant le community management',
     alt: 'Community management',
+<<<<<<< HEAD
     lien: './images/community_management.webp',
+=======
+    lien: 'images/community_management.webp',
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
     class: 'article',
     titleArticle: 'Service de community management',
     contenu:
@@ -90,7 +118,11 @@ export default function NosServices() {
               width={500}
               height={500}
             />
+<<<<<<< HEAD
             <div className="flex flex-col justify-evenly 2xl:w-1/4 xl:w-2/6 lg:w-2/6 tablette:w-2/3 mobile:w-10/12 tablette:py-12  h-3/4">
+=======
+            <div className="flex flex-col justify-evenly 2xl:w-1/4 xl:w-2/6 lg:w-2/6 tablette:w-2/3 mobile:w-10/12 tablette:py-12  h-full">
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
               <h3 className="font-titleFont font-bold text-3xl mobile:text-2xl leading-10 tablette:pb-8 tablette:text-center">
                 {article.titleArticle}
               </h3>

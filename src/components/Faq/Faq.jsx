@@ -59,7 +59,11 @@ const faqs = [
 ];
 export default function Faq() {
   const [open, setOpen] = useState(null);
+<<<<<<< HEAD
   // Ouvre l'élément cliqué/Ferme l'élément si ouvert
+=======
+  /* Ouvre l'élément cliqué/Ferme l'élément si ouvert*/
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
   const handleClickOpen = (id) => {
     if (open === id) {
       setOpen(null);
@@ -89,6 +93,7 @@ export default function Faq() {
               {faq.title}
               {open === faq.id ? (
                 <Image
+<<<<<<< HEAD
                   className="animate-spin-slow"
                   src="/logo/chevron_up.svg"
                   alt="Logo chevron up"
@@ -104,6 +109,23 @@ export default function Faq() {
                   title="Logo pour voir la réponse"
                   width={25}
                   height={25}
+=======
+                  className="animate-spin-slow h-6 w-6"
+                  src="/logo/chevron_up.svg"
+                  alt="Logo chevron up"
+                  title="Logo pour fermer la réponse"
+                  width={24}
+                  height={24}
+                />
+              ) : (
+                <Image
+                  className="animate-spin-slow h-6 w-6"
+                  src="/logo/chevron_down.svg"
+                  alt="Logo chevron down"
+                  title="Logo pour voir la réponse"
+                  width={24}
+                  height={24}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
                 />
               )}
             </h3>
@@ -125,8 +147,16 @@ export default function Faq() {
             </div>
           </div>
         ))}
+<<<<<<< HEAD
         <div className="flex justify-center mt-12">
           <Link href="/Contact" className="cta">
+=======
+        <div className="flex justify-center my-12">
+          <Link
+            href="/Contact"
+            className="cta mobile:scale-90 mobile:hover:scale-100"
+          >
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             Vous n'avez pas trouvé votre réponse, cliquez ici
           </Link>
         </div>

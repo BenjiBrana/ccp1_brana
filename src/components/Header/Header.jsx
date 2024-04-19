@@ -4,8 +4,14 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Header() {
+<<<<<<< HEAD
   const [menuOpen, setMenuOpen] = useState(false);
 
+=======
+  /* indique si menu ouvert (fermer par defaut)*/
+  const [menuOpen, setMenuOpen] = useState(false);
+  /* Si élément cliquer, défilement jusqu'à l'encre cible */
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
   function handleMenuItemClick(targetId) {
     const targetElement = document.getElementById(targetId);
 
@@ -16,7 +22,11 @@ export default function Header() {
       toggleMenu();
     }
   }
+<<<<<<< HEAD
 
+=======
+  /* Empeche le défilement si le menu est ouvert */
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
   function toggleMenu() {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -25,7 +35,11 @@ export default function Header() {
       document.body.classList.remove('overflow-hidden');
     }
   }
+<<<<<<< HEAD
 
+=======
+  /* Gestionnaire d'évenement au clique sur un élément du menu */
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
   useEffect(() => {
     const itemMenus = document.querySelectorAll('.itemMenu');
 
@@ -62,7 +76,11 @@ export default function Header() {
         <Link href="/">
           <Image
             className="imgCircle tablette:w-1/2 mobile:w-1/3  "
+<<<<<<< HEAD
             src="/circle_rwf.webp"
+=======
+            src="/logo/circle_rwf.webp"
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             alt="Logo RWF"
             title="Logo Rural Web Factory"
             width={80}
@@ -73,7 +91,11 @@ export default function Header() {
       <nav
         className={`flex justify-between pt-4 fixed right-1 items-start ${
           menuOpen
+<<<<<<< HEAD
             ? 'bg-primary/90 z-30  w-full'
+=======
+            ? 'bg-primary/90 z-40  w-full'
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             : 'bg-transparent z-10'
         }`}
       >
@@ -84,7 +106,11 @@ export default function Header() {
         >
           {items.map((item) => (
             <li
+<<<<<<< HEAD
               className={`itemMenu font-bold text-3xl uppercase leading-10 hover:bg-textColor/80 hover:text-primary scale-95 hover:scale-125 hover:text-4xl hover:rounded-lg w-1/2 py-4 text-center transition-all ${
+=======
+              className={`itemMenu font-bold text-3xl mobile:text-lg uppercase leading-10 hover:bg-textColor/80 hover:text-primary scale-95 hover:scale-125 hover:text-4xl mobile:hover:text-xl hover:rounded-lg w-1/2 py-4 text-center transition-all ${
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
                 menuOpen ? 'fade-out' : ''
               }`}
               key={item.id}
@@ -103,14 +129,22 @@ export default function Header() {
             <>
               <Image
                 id="closeIcon"
+<<<<<<< HEAD
                 className="h-8 w-8 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+=======
+                className="h-8 w-8 mobile:h-12 mobile:w-12 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
                 src="/logo/close.svg"
                 alt="Logo fermeture"
                 title="Logo Rural Web Factory"
                 width={30}
                 height={30}
               />
+<<<<<<< HEAD
               <div className="btnGroup">
+=======
+              {/* <div className="btnGroup">
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
                 <button
                   className="buttonMode bg-blue-500/50"
                   id="nightModeBtn"
@@ -137,13 +171,22 @@ export default function Header() {
                     height={30}
                   />
                 </button>
+<<<<<<< HEAD
               </div>
+=======
+              </div> */}
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             </>
           ) : (
             <Image
               id="menuIcon"
+<<<<<<< HEAD
               className="h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black mobile:h-6 mobile:w-6  "
               src="/logo/burger_menu.svg"
+=======
+              className="h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black "
+              src="/logo/burger_Menu.svg"
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"
               width={30}
@@ -163,6 +206,10 @@ export default function Header() {
             className="border border-borderColor shadow shadow-white w-1/4 rounded-l-lg px-2 tablette:w-2/4"
             type="search"
             name="search"
+<<<<<<< HEAD
+=======
+            title="search bar"
+>>>>>>> c35448ee9fea130697a1d5995be752f916027ef6
             id="search"
             placeholder="Saisissez votre recherche"
           />
