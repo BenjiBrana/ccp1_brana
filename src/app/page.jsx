@@ -49,7 +49,6 @@ export default function Page({ children }) {
             />
           </a>
         </div>
-
         <MySlider />
         {children}
         <ParagrapheAccueil />
